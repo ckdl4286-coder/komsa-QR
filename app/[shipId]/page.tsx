@@ -148,7 +148,24 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
            <Activity size={18} /> 편리한 부가 서비스 (추가 안내)
         </h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-          {/* 수동 추가 서비스 (시안 기준) */}
+          <ActionButton 
+            shipId={ship.id} 
+            linkId="service_patis" 
+            url="https://mtis.komsa.or.kr/viewer/m" 
+            title="PATIS 실시간 여객선 정보" 
+            description="전국 여객선 위치 확인 및 항로 정보 제공"
+            guideText="이동하기"
+            iconName="ExternalLink" 
+          />
+          <ActionButton 
+            shipId={ship.id} 
+            linkId="service_vr" 
+            url="https://www.youtube.com/playlist?list=PLtY6qP5v0cW97FjE2m9r1_Z6X_eX..." 
+            title="여객선 어때(VR체험)" 
+            description="가상현실로 만나는 생생한 여객선 안전 교육"
+            guideText="체험하기"
+            iconName="Zap" 
+          />
           <ActionButton 
             shipId={ship.id} 
             linkId="service_ev" 
@@ -159,15 +176,6 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
             isFree={true}
             iconName="ShieldCheck" 
           />
-          <ActionButton 
-            shipId={ship.id} 
-            linkId="service_patis" 
-            url="https://mtis.komsa.or.kr/viewer/m" 
-            title="PATIS 실시간 여객선 정보" 
-            description="전국 여객선 위치 확인 및 항로 정보 제공"
-            guideText="이동하기"
-            iconName="ExternalLink" 
-          />
 
           {/* DB 링크 (중복 제외) */}
           {ship.links
@@ -175,6 +183,7 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
                !link.title.includes('PATIS') && 
                !link.title.includes('전기차') && 
                !link.title.includes('밴드') &&
+               !link.title.includes('VR') &&
                !link.url.includes('band.us')
             )
             .map((link: any) => (

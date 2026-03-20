@@ -30,8 +30,8 @@ export function BandStatusButton({ shipId }: { shipId: string }) {
         transition: 'transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)' 
       }}
     >
-      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.15rem', fontWeight: 850 }}>
-        📢 실시간 운항동태 바로 확인 (네이버 밴드) <ChevronRight size={18} />
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.05rem', fontWeight: 850, whiteSpace: 'nowrap' }}>
+        📢 실시간 운항동태 (네이버 밴드) <ChevronRight size={18} />
       </div>
       <div style={{ fontSize: '0.85rem', opacity: 0.95, marginTop: '6px', fontWeight: 500, letterSpacing: '-0.2px' }}>
         목포 여객선 운항정보를 가장 빠르게 확인하세요
