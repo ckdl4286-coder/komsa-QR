@@ -184,7 +184,10 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
                !link.title.includes('전기차') && 
                !link.title.includes('밴드') &&
                !link.title.includes('VR') &&
-               !link.url.includes('band.us')
+               !link.title.includes('어때') &&
+               !link.url.includes('band.us') &&
+               !link.url.includes('komsa.or.kr/viewer') &&
+               !link.url.includes('docs.google.com/forms') 
             )
             .map((link: any) => (
             <ActionButton 

@@ -137,29 +137,41 @@ export function getStatusInfo(schedule: SailSchedule | null | undefined): {
   }
 
   const code = schedule.nvg_se_cd;
+  const labelText = schedule.nvg_stts_nm || schedule.nvg_se_nm || '';
   const reason =
     schedule.cntrl_rsn_nm ||
     schedule.nnavi_rsn_nm ||
     schedule.cnls_etc_rsn ||
     undefined;
 
+  // 1. 키워드 기반 정상 판별 (코드가 6(대기/지연)이나 기타여도 텍스트가 정상이면 정상으로 간주)
+  const isHealthy = 
+    labelText.includes('정상') || 
+    labelText.includes('운항중') || 
+    labelText.includes('증선') || 
+    labelText.includes('증회') ||
+    ['1', '2', '3'].includes(code || '');
+
+  if (isHealthy) {
+    return { 
+      label: labelText.includes('정상') ? '정상 운항 예정' : (labelText || '정상 운항'), 
+      emoji: '🟢', 
+      color: '#166534', 
+      bgColor: '#dcfce7', 
+      reason: undefined // 정상일 때는 사유 노출 금지
+    };
+  }
+
+  // 2. 비정상 상태 처리
   switch (code) {
-    case '1': // 정상
-      return { label: '정상 운항 예정', emoji: '🟢', color: '#166534', bgColor: '#dcfce7', reason: undefined };
-    case '2': // 증선
-      return { label: '증선 운항', emoji: '🚢', color: '#1e40af', bgColor: '#dbeafe', reason: undefined };
-    case '3': // 증회
-      return { label: '증회 운항', emoji: '🔁', color: '#1e40af', bgColor: '#dbeafe', reason: undefined };
     case '4': // 비운항
       return { label: '비운항', emoji: '🔴', color: '#991b1b', bgColor: '#fee2e2', reason };
     case '5': // 통제
       return { label: '운항 통제', emoji: '⛔', color: '#991b1b', bgColor: '#fee2e2', reason };
-    case '6': // 대기/지연
+    case '6': // 대기/지연 (위의 Healthy 체크를 통과하지 못한 진짜 지연)
       return { label: '대기 / 지연', emoji: '🟡', color: '#92400e', bgColor: '#fef9c3', reason };
     default:
-      // 기본적으로 비정상 상태(정상코드 1~3 아님)가 아닐 때만 사유 표시
-      const showReason = !(['1', '2', '3'].includes(code || '')) ? reason : undefined;
-      return { label: schedule.nvg_se_nm || '정보 준비 중', emoji: '⏳', color: '#64748b', bgColor: '#f1f5f9', reason: showReason };
+      return { label: labelText || '정보 준비 중', emoji: '⏳', color: '#64748b', bgColor: '#f1f5f9', reason };
   }
 }
 
