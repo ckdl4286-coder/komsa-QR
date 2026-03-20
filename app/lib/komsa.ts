@@ -145,11 +145,11 @@ export function getStatusInfo(schedule: SailSchedule | null | undefined): {
 
   switch (code) {
     case '1': // 정상
-      return { label: '정상 운항 예정', emoji: '🟢', color: '#166534', bgColor: '#dcfce7', reason };
+      return { label: '정상 운항 예정', emoji: '🟢', color: '#166534', bgColor: '#dcfce7', reason: undefined };
     case '2': // 증선
-      return { label: '증선 운항', emoji: '🚢', color: '#1e40af', bgColor: '#dbeafe', reason };
+      return { label: '증선 운항', emoji: '🚢', color: '#1e40af', bgColor: '#dbeafe', reason: undefined };
     case '3': // 증회
-      return { label: '증회 운항', emoji: '🔁', color: '#1e40af', bgColor: '#dbeafe', reason };
+      return { label: '증회 운항', emoji: '🔁', color: '#1e40af', bgColor: '#dbeafe', reason: undefined };
     case '4': // 비운항
       return { label: '비운항', emoji: '🔴', color: '#991b1b', bgColor: '#fee2e2', reason };
     case '5': // 통제
@@ -157,7 +157,9 @@ export function getStatusInfo(schedule: SailSchedule | null | undefined): {
     case '6': // 대기/지연
       return { label: '대기 / 지연', emoji: '🟡', color: '#92400e', bgColor: '#fef9c3', reason };
     default:
-      return { label: schedule.nvg_se_nm || '정보 준비 중', emoji: '⏳', color: '#64748b', bgColor: '#f1f5f9', reason };
+      // 기본적으로 비정상 상태(정상코드 1~3 아님)가 아닐 때만 사유 표시
+      const showReason = !(['1', '2', '3'].includes(code || '')) ? reason : undefined;
+      return { label: schedule.nvg_se_nm || '정보 준비 중', emoji: '⏳', color: '#64748b', bgColor: '#f1f5f9', reason: showReason };
   }
 }
 
