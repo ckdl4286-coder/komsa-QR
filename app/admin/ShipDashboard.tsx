@@ -51,9 +51,17 @@ export default function ShipDashboard({ ship, config, overallStats, urlOrigin, i
 
       {!isGlobal && (
         <div className={styles.urlCard}>
-          <div>
+          <div style={{ flex: 1 }}>
              <div className={styles.urlLabel}>QR 연결 URL (이 주소를 QR코드로 만드세요)</div>
-             <div className={styles.urlText}>{publicUrl}</div>
+             <a 
+               href={publicUrl} 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               className={styles.urlText}
+               style={{ textDecoration: 'none', cursor: 'pointer', display: 'block' }}
+             >
+               {publicUrl} <ExternalLink size={14} style={{ marginLeft: '0.4rem', verticalAlign: 'middle', opacity: 0.7 }} />
+             </a>
           </div>
           <button onClick={handleCopy} className={styles.copyBtn}><Copy size={16} /> 복사</button>
         </div>
