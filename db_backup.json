@@ -1,0 +1,1846 @@
+{
+  "ships": [
+    {
+      "id": "cmmxeiweh0000x8eduqa50wbl",
+      "name": "퀸제누비아",
+      "urlSlug": "퀸제누비아",
+      "createdAt": "2026-03-19T11:43:21.737Z",
+      "updatedAt": "2026-03-19T14:15:46.441Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxeiweh0001x8edmnj6z205",
+          "shipId": "cmmxeiweh0000x8eduqa50wbl",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": "Navigation",
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 1,
+          "createdAt": "2026-03-19T11:43:21.737Z"
+        },
+        {
+          "id": "cmmxeiweh0002x8edzq5nldi3",
+          "shipId": "cmmxeiweh0000x8eduqa50wbl",
+          "title": "여객선 어때(VR체험)",
+          "icon": "Info",
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T11:43:21.737Z"
+        },
+        {
+          "id": "cmmxeiweh0003x8edctvuk0ru",
+          "shipId": "cmmxeiweh0000x8eduqa50wbl",
+          "title": "전기차 배터리 점검서비스",
+          "icon": "Zap",
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T11:43:21.737Z"
+        }
+      ],
+      "visits": [
+        {
+          "id": "cmmxilgon0001ddd1qo1lavcm",
+          "shipId": "cmmxeiweh0000x8eduqa50wbl",
+          "createdAt": "2026-03-19T13:37:19.795Z"
+        },
+        {
+          "id": "cmmxilhj10003ddd1tpxna2to",
+          "shipId": "cmmxeiweh0000x8eduqa50wbl",
+          "createdAt": "2026-03-19T13:37:20.893Z"
+        },
+        {
+          "id": "cmmxivne30001mmnau2zgbqoc",
+          "shipId": "cmmxeiweh0000x8eduqa50wbl",
+          "createdAt": "2026-03-19T13:45:15.051Z"
+        },
+        {
+          "id": "cmmxj8izd0003mmnad9xp714m",
+          "shipId": "cmmxeiweh0000x8eduqa50wbl",
+          "createdAt": "2026-03-19T13:55:15.865Z"
+        },
+        {
+          "id": "cmmxkbcmj0008mmnamvahimsx",
+          "shipId": "cmmxeiweh0000x8eduqa50wbl",
+          "createdAt": "2026-03-19T14:25:27.212Z"
+        },
+        {
+          "id": "cmmxkth20000bmmnacu0rchf5",
+          "shipId": "cmmxeiweh0000x8eduqa50wbl",
+          "createdAt": "2026-03-19T14:39:32.760Z"
+        },
+        {
+          "id": "cmmxpnd7t0001vd7vypqj2b13",
+          "shipId": "cmmxeiweh0000x8eduqa50wbl",
+          "createdAt": "2026-03-19T16:54:45.915Z"
+        },
+        {
+          "id": "cmmyu704f000112sfhcm1u1qc",
+          "shipId": "cmmxeiweh0000x8eduqa50wbl",
+          "createdAt": "2026-03-20T11:49:46.711Z"
+        },
+        {
+          "id": "cmmyu726o000312sffprpi8ee",
+          "shipId": "cmmxeiweh0000x8eduqa50wbl",
+          "createdAt": "2026-03-20T11:49:49.393Z"
+        },
+        {
+          "id": "cmmyuc2y40001ss9ix3bahy6d",
+          "shipId": "cmmxeiweh0000x8eduqa50wbl",
+          "createdAt": "2026-03-20T11:53:43.660Z"
+        },
+        {
+          "id": "cmmyuc32w0003ss9it23se1jm",
+          "shipId": "cmmxeiweh0000x8eduqa50wbl",
+          "createdAt": "2026-03-20T11:53:43.833Z"
+        },
+        {
+          "id": "cmmyuzydv0001jmsdzdxs7tfh",
+          "shipId": "cmmxeiweh0000x8eduqa50wbl",
+          "createdAt": "2026-03-20T12:12:17.491Z"
+        },
+        {
+          "id": "cmmyvasid00012bzhp52mgj09",
+          "shipId": "cmmxeiweh0000x8eduqa50wbl",
+          "createdAt": "2026-03-20T12:20:43.093Z"
+        }
+      ]
+    },
+    {
+      "id": "cmmxje5110004mmna0su2gs1n",
+      "name": "퀸제누비아2",
+      "urlSlug": "퀸제누비아2",
+      "createdAt": "2026-03-19T13:59:37.717Z",
+      "updatedAt": "2026-03-19T14:15:46.157Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqdl0001kds71s8orwpq",
+          "shipId": "cmmxje5110004mmna0su2gs1n",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.342Z"
+        },
+        {
+          "id": "cmmxkdqe10003kds7f5yjh0e6",
+          "shipId": "cmmxje5110004mmna0su2gs1n",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.361Z"
+        },
+        {
+          "id": "cmmxkdqee0005kds7gv4dvmrh",
+          "shipId": "cmmxje5110004mmna0su2gs1n",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.374Z"
+        }
+      ],
+      "visits": [
+        {
+          "id": "cmmyv4g090003jmsdi4qirx44",
+          "shipId": "cmmxje5110004mmna0su2gs1n",
+          "createdAt": "2026-03-20T12:15:46.953Z"
+        },
+        {
+          "id": "cmmyvasl500032bzh5n25vmy4",
+          "shipId": "cmmxje5110004mmna0su2gs1n",
+          "createdAt": "2026-03-20T12:20:43.193Z"
+        }
+      ]
+    },
+    {
+      "id": "cmmxjyw8h000011a3fsevdhs6",
+      "name": "엔젤호",
+      "urlSlug": "엔젤호",
+      "createdAt": "2026-03-19T14:15:46.098Z",
+      "updatedAt": "2026-03-19T14:15:46.098Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqet0007kds7m2tilxs0",
+          "shipId": "cmmxjyw8h000011a3fsevdhs6",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.389Z"
+        },
+        {
+          "id": "cmmxkdqf40009kds7uvu5reqy",
+          "shipId": "cmmxjyw8h000011a3fsevdhs6",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.400Z"
+        },
+        {
+          "id": "cmmxkdqfb000bkds7gakse0ys",
+          "shipId": "cmmxjyw8h000011a3fsevdhs6",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.407Z"
+        }
+      ],
+      "visits": [
+        {
+          "id": "cmmxpot2d0003vd7v3pfq5muf",
+          "shipId": "cmmxjyw8h000011a3fsevdhs6",
+          "createdAt": "2026-03-19T16:55:53.125Z"
+        },
+        {
+          "id": "cmmxpow9l0005vd7vdrwilwnc",
+          "shipId": "cmmxjyw8h000011a3fsevdhs6",
+          "createdAt": "2026-03-19T16:55:57.274Z"
+        },
+        {
+          "id": "cmmxpoylu0007vd7vx0aq6dbb",
+          "shipId": "cmmxjyw8h000011a3fsevdhs6",
+          "createdAt": "2026-03-19T16:56:00.306Z"
+        }
+      ]
+    },
+    {
+      "id": "cmmxjyw8u000111a3yy1cymwd",
+      "name": "해진아일랜드",
+      "urlSlug": "해진아일랜드",
+      "createdAt": "2026-03-19T14:15:46.111Z",
+      "updatedAt": "2026-03-19T14:15:46.111Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqfi000dkds7o8nsj8x7",
+          "shipId": "cmmxjyw8u000111a3yy1cymwd",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.414Z"
+        },
+        {
+          "id": "cmmxkdqfr000fkds7e1jcwq3e",
+          "shipId": "cmmxjyw8u000111a3yy1cymwd",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.423Z"
+        },
+        {
+          "id": "cmmxkdqfy000hkds7q5t644rl",
+          "shipId": "cmmxjyw8u000111a3yy1cymwd",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.431Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjyw95000211a3rth3rfiy",
+      "name": "플로피아",
+      "urlSlug": "플로피아",
+      "createdAt": "2026-03-19T14:15:46.121Z",
+      "updatedAt": "2026-03-19T14:15:46.121Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqg9000jkds7tpptl3c9",
+          "shipId": "cmmxjyw95000211a3rth3rfiy",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.441Z"
+        },
+        {
+          "id": "cmmxkdqgl000lkds7b5k319m5",
+          "shipId": "cmmxjyw95000211a3rth3rfiy",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.454Z"
+        },
+        {
+          "id": "cmmxkdqgw000nkds7j4lov3t2",
+          "shipId": "cmmxjyw95000211a3rth3rfiy",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.464Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjyw9d000311a3tc06h5ss",
+      "name": "슬로시티6호",
+      "urlSlug": "슬로시티6호",
+      "createdAt": "2026-03-19T14:15:46.130Z",
+      "updatedAt": "2026-03-19T14:15:46.130Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqhd000pkds79qoajp01",
+          "shipId": "cmmxjyw9d000311a3tc06h5ss",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.481Z"
+        },
+        {
+          "id": "cmmxkdqhu000rkds7xor68vn1",
+          "shipId": "cmmxjyw9d000311a3tc06h5ss",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.498Z"
+        },
+        {
+          "id": "cmmxkdqi7000tkds7gm979ij3",
+          "shipId": "cmmxjyw9d000311a3tc06h5ss",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.511Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjyw9r000411a36wtmdzhx",
+      "name": "슬로시티5호",
+      "urlSlug": "슬로시티5호",
+      "createdAt": "2026-03-19T14:15:46.143Z",
+      "updatedAt": "2026-03-19T14:15:46.143Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqii000vkds71lg1uvie",
+          "shipId": "cmmxjyw9r000411a36wtmdzhx",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.522Z"
+        },
+        {
+          "id": "cmmxkdqir000xkds7tyejeoa9",
+          "shipId": "cmmxjyw9r000411a36wtmdzhx",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.531Z"
+        },
+        {
+          "id": "cmmxkdqj0000zkds7g1jmtl6g",
+          "shipId": "cmmxjyw9r000411a36wtmdzhx",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.541Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywah000611a30762qqu4",
+      "name": "영광사랑",
+      "urlSlug": "영광사랑",
+      "createdAt": "2026-03-19T14:15:46.169Z",
+      "updatedAt": "2026-03-19T14:15:46.169Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqj60011kds7fof87mdc",
+          "shipId": "cmmxjywah000611a30762qqu4",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.547Z"
+        },
+        {
+          "id": "cmmxkdqjf0013kds7jm0knh93",
+          "shipId": "cmmxjywah000611a30762qqu4",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.555Z"
+        },
+        {
+          "id": "cmmxkdqjm0015kds7eqt7eojs",
+          "shipId": "cmmxjywah000611a30762qqu4",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.562Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywaz000711a32jy7uy9f",
+      "name": "섬사랑17호",
+      "urlSlug": "섬사랑17호",
+      "createdAt": "2026-03-19T14:15:46.187Z",
+      "updatedAt": "2026-03-19T14:15:46.187Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqjt0017kds7uuda1k98",
+          "shipId": "cmmxjywaz000711a32jy7uy9f",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.569Z"
+        },
+        {
+          "id": "cmmxkdqk30019kds77cbbwvqb",
+          "shipId": "cmmxjywaz000711a32jy7uy9f",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.580Z"
+        },
+        {
+          "id": "cmmxkdqkc001bkds73lh3y6na",
+          "shipId": "cmmxjywaz000711a32jy7uy9f",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.589Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywb8000811a3h1oh62bv",
+      "name": "해진고속카페리",
+      "urlSlug": "해진고속카페리",
+      "createdAt": "2026-03-19T14:15:46.196Z",
+      "updatedAt": "2026-03-19T14:15:46.196Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqkm001dkds72xawlwlm",
+          "shipId": "cmmxjywb8000811a3h1oh62bv",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.598Z"
+        },
+        {
+          "id": "cmmxkdqky001fkds7fo7z7dhg",
+          "shipId": "cmmxjywb8000811a3h1oh62bv",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.611Z"
+        },
+        {
+          "id": "cmmxkdql9001hkds7t26t0j5j",
+          "shipId": "cmmxjywb8000811a3h1oh62bv",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.621Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywbh000911a3vecpg8kg",
+      "name": "천사1호",
+      "urlSlug": "천사1호",
+      "createdAt": "2026-03-19T14:15:46.206Z",
+      "updatedAt": "2026-03-19T14:15:46.206Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqln001jkds7go8zrcq1",
+          "shipId": "cmmxjywbh000911a3vecpg8kg",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.636Z"
+        },
+        {
+          "id": "cmmxkdqlu001lkds7yr8y8s0a",
+          "shipId": "cmmxjywbh000911a3vecpg8kg",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.642Z"
+        },
+        {
+          "id": "cmmxkdqm0001nkds78b6b62xw",
+          "shipId": "cmmxjywbh000911a3vecpg8kg",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.649Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywbr000a11a3l7ysigkg",
+      "name": "퍼스트엔젤",
+      "urlSlug": "퍼스트엔젤",
+      "createdAt": "2026-03-19T14:15:46.215Z",
+      "updatedAt": "2026-03-19T14:15:46.215Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqma001pkds7nez784rd",
+          "shipId": "cmmxjywbr000a11a3l7ysigkg",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.658Z"
+        },
+        {
+          "id": "cmmxkdqmp001rkds7w9nbec36",
+          "shipId": "cmmxjywbr000a11a3l7ysigkg",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.673Z"
+        },
+        {
+          "id": "cmmxkdqn2001tkds7g47gpflk",
+          "shipId": "cmmxjywbr000a11a3l7ysigkg",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.686Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywc2000b11a3b9c4z2gn",
+      "name": "플로피아2",
+      "urlSlug": "플로피아2",
+      "createdAt": "2026-03-19T14:15:46.226Z",
+      "updatedAt": "2026-03-19T14:15:46.226Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqnd001vkds7zzkhe73n",
+          "shipId": "cmmxjywc2000b11a3b9c4z2gn",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.697Z"
+        },
+        {
+          "id": "cmmxkdqoe001xkds7l26k9rd0",
+          "shipId": "cmmxjywc2000b11a3b9c4z2gn",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.735Z"
+        },
+        {
+          "id": "cmmxkdqoq001zkds7k1t4jiub",
+          "shipId": "cmmxjywc2000b11a3b9c4z2gn",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.747Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywcc000c11a3z1nt4tre",
+      "name": "산타모니카",
+      "urlSlug": "산타모니카",
+      "createdAt": "2026-03-19T14:15:46.236Z",
+      "updatedAt": "2026-03-19T14:15:46.236Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqoz0021kds79xo1s9b1",
+          "shipId": "cmmxjywcc000c11a3z1nt4tre",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.756Z"
+        },
+        {
+          "id": "cmmxkdqp90023kds7neiqg4n8",
+          "shipId": "cmmxjywcc000c11a3z1nt4tre",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.765Z"
+        },
+        {
+          "id": "cmmxkdqph0025kds7upzpv0og",
+          "shipId": "cmmxjywcc000c11a3z1nt4tre",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.773Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywco000d11a3wbxo7epn",
+      "name": "슬로시티호",
+      "urlSlug": "슬로시티호",
+      "createdAt": "2026-03-19T14:15:46.248Z",
+      "updatedAt": "2026-03-19T14:15:46.248Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqpo0027kds73qt03vds",
+          "shipId": "cmmxjywco000d11a3wbxo7epn",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.780Z"
+        },
+        {
+          "id": "cmmxkdqpv0029kds7lsevapv6",
+          "shipId": "cmmxjywco000d11a3wbxo7epn",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.787Z"
+        },
+        {
+          "id": "cmmxkdqq1002bkds754aevrgq",
+          "shipId": "cmmxjywco000d11a3wbxo7epn",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.794Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywcw000e11a3ei864pn7",
+      "name": "슬로아일랜드호",
+      "urlSlug": "슬로아일랜드호",
+      "createdAt": "2026-03-19T14:15:46.256Z",
+      "updatedAt": "2026-03-19T14:15:46.256Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqq9002dkds79zybkijo",
+          "shipId": "cmmxjywcw000e11a3ei864pn7",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.802Z"
+        },
+        {
+          "id": "cmmxkdqqf002fkds72o63xidy",
+          "shipId": "cmmxjywcw000e11a3ei864pn7",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.808Z"
+        },
+        {
+          "id": "cmmxkdqqq002hkds7x1n041sg",
+          "shipId": "cmmxjywcw000e11a3ei864pn7",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.818Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywd4000f11a3s8bnycrw",
+      "name": "뉴돌핀호",
+      "urlSlug": "뉴돌핀호",
+      "createdAt": "2026-03-19T14:15:46.264Z",
+      "updatedAt": "2026-03-19T14:15:46.264Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqr9002jkds7rxqyxwt3",
+          "shipId": "cmmxjywd4000f11a3s8bnycrw",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.837Z"
+        },
+        {
+          "id": "cmmxkdqrp002lkds76r74cfsl",
+          "shipId": "cmmxjywd4000f11a3s8bnycrw",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.854Z"
+        },
+        {
+          "id": "cmmxkdqs0002nkds7kx877xpd",
+          "shipId": "cmmxjywd4000f11a3s8bnycrw",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.865Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywdd000g11a36rzkwec5",
+      "name": "핑크돌핀호",
+      "urlSlug": "핑크돌핀호",
+      "createdAt": "2026-03-19T14:15:46.273Z",
+      "updatedAt": "2026-03-19T14:15:46.273Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqsb002pkds7iem9ap7h",
+          "shipId": "cmmxjywdd000g11a36rzkwec5",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.875Z"
+        },
+        {
+          "id": "cmmxkdqsm002rkds76gby0r2r",
+          "shipId": "cmmxjywdd000g11a36rzkwec5",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.887Z"
+        },
+        {
+          "id": "cmmxkdqsu002tkds7xhpb7g6o",
+          "shipId": "cmmxjywdd000g11a36rzkwec5",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.895Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywdk000h11a35duo9kme",
+      "name": "섬드리비금농협고속페리",
+      "urlSlug": "섬드리비금농협고속페리",
+      "createdAt": "2026-03-19T14:15:46.280Z",
+      "updatedAt": "2026-03-19T14:15:46.280Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqt1002vkds7dffxr39m",
+          "shipId": "cmmxjywdk000h11a35duo9kme",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.902Z"
+        },
+        {
+          "id": "cmmxkdqtb002xkds7oinkowqv",
+          "shipId": "cmmxjywdk000h11a35duo9kme",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.911Z"
+        },
+        {
+          "id": "cmmxkdqtr002zkds75jw1j355",
+          "shipId": "cmmxjywdk000h11a35duo9kme",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.927Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywdt000i11a3o23u75fv",
+      "name": "섬사랑9호",
+      "urlSlug": "섬사랑9호",
+      "createdAt": "2026-03-19T14:15:46.289Z",
+      "updatedAt": "2026-03-19T14:15:46.289Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqu30031kds7u3ae6fjy",
+          "shipId": "cmmxjywdt000i11a3o23u75fv",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.939Z"
+        },
+        {
+          "id": "cmmxkdqub0033kds72nv36zx0",
+          "shipId": "cmmxjywdt000i11a3o23u75fv",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.948Z"
+        },
+        {
+          "id": "cmmxkdquv0035kds7mipvazjs",
+          "shipId": "cmmxjywdt000i11a3o23u75fv",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.968Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywe2000j11a3r6780g6j",
+      "name": "슬로시티3호",
+      "urlSlug": "슬로시티3호",
+      "createdAt": "2026-03-19T14:15:46.298Z",
+      "updatedAt": "2026-03-19T14:15:46.298Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqvb0037kds75ejetdkc",
+          "shipId": "cmmxjywe2000j11a3r6780g6j",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.984Z"
+        },
+        {
+          "id": "cmmxkdqvp0039kds7bb5elaey",
+          "shipId": "cmmxjywe2000j11a3r6780g6j",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:18.998Z"
+        },
+        {
+          "id": "cmmxkdqwb003bkds7qolrpjav",
+          "shipId": "cmmxjywe2000j11a3r6780g6j",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.019Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywed000k11a30chosxg0",
+      "name": "슬로시티2호",
+      "urlSlug": "슬로시티2호",
+      "createdAt": "2026-03-19T14:15:46.309Z",
+      "updatedAt": "2026-03-19T14:15:46.309Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqwo003dkds75is3tyct",
+          "shipId": "cmmxjywed000k11a30chosxg0",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.032Z"
+        },
+        {
+          "id": "cmmxkdqwz003fkds7ivo89rbm",
+          "shipId": "cmmxjywed000k11a30chosxg0",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.044Z"
+        },
+        {
+          "id": "cmmxkdqx9003hkds7urfpzuel",
+          "shipId": "cmmxjywed000k11a30chosxg0",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.053Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywep000l11a3ub5lvl3u",
+      "name": "뉴드림호",
+      "urlSlug": "뉴드림호",
+      "createdAt": "2026-03-19T14:15:46.322Z",
+      "updatedAt": "2026-03-19T14:15:46.322Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqxi003jkds7wj0t9eg0",
+          "shipId": "cmmxjywep000l11a3ub5lvl3u",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.062Z"
+        },
+        {
+          "id": "cmmxkdqy1003lkds76dq6ym0y",
+          "shipId": "cmmxjywep000l11a3ub5lvl3u",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.081Z"
+        },
+        {
+          "id": "cmmxkdqyi003nkds76wiumomu",
+          "shipId": "cmmxjywep000l11a3ub5lvl3u",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.098Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywf4000m11a33pmqc769",
+      "name": "천사2호",
+      "urlSlug": "천사2호",
+      "createdAt": "2026-03-19T14:15:46.336Z",
+      "updatedAt": "2026-03-19T14:15:46.336Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqyv003pkds710mxzjvq",
+          "shipId": "cmmxjywf4000m11a33pmqc769",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.111Z"
+        },
+        {
+          "id": "cmmxkdqz8003rkds7m9nunz7l",
+          "shipId": "cmmxjywf4000m11a33pmqc769",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.124Z"
+        },
+        {
+          "id": "cmmxkdqzk003tkds77lhcd5b4",
+          "shipId": "cmmxjywf4000m11a33pmqc769",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.136Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywfd000n11a3adtu3go3",
+      "name": "동양골드",
+      "urlSlug": "동양골드",
+      "createdAt": "2026-03-19T14:15:46.345Z",
+      "updatedAt": "2026-03-19T14:15:46.345Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdqzs003vkds7ngl3nfhr",
+          "shipId": "cmmxjywfd000n11a3adtu3go3",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.145Z"
+        },
+        {
+          "id": "cmmxkdr02003xkds74bngfami",
+          "shipId": "cmmxjywfd000n11a3adtu3go3",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.154Z"
+        },
+        {
+          "id": "cmmxkdr0e003zkds7tgp0rczi",
+          "shipId": "cmmxjywfd000n11a3adtu3go3",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.166Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywfo000o11a3vv7sbstm",
+      "name": "뉴엔젤호",
+      "urlSlug": "뉴엔젤호",
+      "createdAt": "2026-03-19T14:15:46.357Z",
+      "updatedAt": "2026-03-19T14:15:46.357Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdr0m0041kds7fcdw4s1o",
+          "shipId": "cmmxjywfo000o11a3vv7sbstm",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.175Z"
+        },
+        {
+          "id": "cmmxkdr0t0043kds7f9asjbpy",
+          "shipId": "cmmxjywfo000o11a3vv7sbstm",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.181Z"
+        },
+        {
+          "id": "cmmxkdr100045kds7oy04a42w",
+          "shipId": "cmmxjywfo000o11a3vv7sbstm",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.189Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywfw000p11a3h9hkungn",
+      "name": "섬사랑10호",
+      "urlSlug": "섬사랑10호",
+      "createdAt": "2026-03-19T14:15:46.364Z",
+      "updatedAt": "2026-03-19T14:15:46.364Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdr1a0047kds76s0f912a",
+          "shipId": "cmmxjywfw000p11a3h9hkungn",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.199Z"
+        },
+        {
+          "id": "cmmxkdr1o0049kds71rop31i1",
+          "shipId": "cmmxjywfw000p11a3h9hkungn",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.212Z"
+        },
+        {
+          "id": "cmmxkdr21004bkds7go2onlqf",
+          "shipId": "cmmxjywfw000p11a3h9hkungn",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.225Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywg5000q11a3g4zo1qtl",
+      "name": "천사카훼리호",
+      "urlSlug": "천사카훼리호",
+      "createdAt": "2026-03-19T14:15:46.373Z",
+      "updatedAt": "2026-03-19T14:15:46.373Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdr2f004dkds78v6wzz2y",
+          "shipId": "cmmxjywg5000q11a3g4zo1qtl",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.239Z"
+        },
+        {
+          "id": "cmmxkdr3i004fkds76blfeqah",
+          "shipId": "cmmxjywg5000q11a3g4zo1qtl",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.279Z"
+        },
+        {
+          "id": "cmmxkdr5c004hkds7p02a0agv",
+          "shipId": "cmmxjywg5000q11a3g4zo1qtl",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.344Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywgd000r11a3ycyw4ks9",
+      "name": "섬사랑12호",
+      "urlSlug": "섬사랑12호",
+      "createdAt": "2026-03-19T14:15:46.381Z",
+      "updatedAt": "2026-03-19T14:15:46.381Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdr6d004jkds7wgqcgzuc",
+          "shipId": "cmmxjywgd000r11a3ycyw4ks9",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.381Z"
+        },
+        {
+          "id": "cmmxkdr85004lkds7byjaa2pe",
+          "shipId": "cmmxjywgd000r11a3ycyw4ks9",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.445Z"
+        },
+        {
+          "id": "cmmxkdr8z004nkds77nkqddy1",
+          "shipId": "cmmxjywgd000r11a3ycyw4ks9",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.475Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywgm000s11a30cum96w6",
+      "name": "새섬두레호",
+      "urlSlug": "새섬두레호",
+      "createdAt": "2026-03-19T14:15:46.390Z",
+      "updatedAt": "2026-03-19T14:15:46.390Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdr9m004pkds7mesgqbyk",
+          "shipId": "cmmxjywgm000s11a30cum96w6",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.498Z"
+        },
+        {
+          "id": "cmmxkdrai004rkds7ado5wu0q",
+          "shipId": "cmmxjywgm000s11a30cum96w6",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.530Z"
+        },
+        {
+          "id": "cmmxkdrb3004tkds791neo8ts",
+          "shipId": "cmmxjywgm000s11a30cum96w6",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.551Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywgy000t11a3gi7y7ohl",
+      "name": "도초카훼리2호",
+      "urlSlug": "도초카훼리2호",
+      "createdAt": "2026-03-19T14:15:46.402Z",
+      "updatedAt": "2026-03-19T14:15:46.402Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdrbr004vkds7rakz00k5",
+          "shipId": "cmmxjywgy000t11a3gi7y7ohl",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.576Z"
+        },
+        {
+          "id": "cmmxkdrct004xkds7v6vqps6i",
+          "shipId": "cmmxjywgy000t11a3gi7y7ohl",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.613Z"
+        },
+        {
+          "id": "cmmxkdrdq004zkds7selg89rs",
+          "shipId": "cmmxjywgy000t11a3gi7y7ohl",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.647Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywha000u11a3je8ik8xd",
+      "name": "섬사랑13호",
+      "urlSlug": "섬사랑13호",
+      "createdAt": "2026-03-19T14:15:46.415Z",
+      "updatedAt": "2026-03-19T14:15:46.415Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdrej0051kds7zh06kcuc",
+          "shipId": "cmmxjywha000u11a3je8ik8xd",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.676Z"
+        },
+        {
+          "id": "cmmxkdrfc0053kds75m0gszi1",
+          "shipId": "cmmxjywha000u11a3je8ik8xd",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.705Z"
+        },
+        {
+          "id": "cmmxkdrfq0055kds72jf4m8sq",
+          "shipId": "cmmxjywha000u11a3je8ik8xd",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.719Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywhm000v11a36naaiuvz",
+      "name": "한림페리11호",
+      "urlSlug": "한림페리11호",
+      "createdAt": "2026-03-19T14:15:46.426Z",
+      "updatedAt": "2026-03-19T14:15:46.426Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdrg90057kds7fgwoi5i9",
+          "shipId": "cmmxjywhm000v11a36naaiuvz",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.737Z"
+        },
+        {
+          "id": "cmmxkdrgy0059kds7wn06m4np",
+          "shipId": "cmmxjywhm000v11a36naaiuvz",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.762Z"
+        },
+        {
+          "id": "cmmxkdrhf005bkds7j1j3wjh1",
+          "shipId": "cmmxjywhm000v11a36naaiuvz",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.779Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywhv000w11a3bqhwgwpj",
+      "name": "대흥고속카페리",
+      "urlSlug": "대흥고속카페리",
+      "createdAt": "2026-03-19T14:15:46.435Z",
+      "updatedAt": "2026-03-19T14:15:46.435Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdrje005dkds7vrjhtnm6",
+          "shipId": "cmmxjywhv000w11a3bqhwgwpj",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.851Z"
+        },
+        {
+          "id": "cmmxkdrjz005fkds72pzughtn",
+          "shipId": "cmmxjywhv000w11a3bqhwgwpj",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.871Z"
+        },
+        {
+          "id": "cmmxkdrkg005hkds79hu395zl",
+          "shipId": "cmmxjywhv000w11a3bqhwgwpj",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.888Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywi7000y11a3gn6aip1s",
+      "name": "섬사랑15호",
+      "urlSlug": "섬사랑15호",
+      "createdAt": "2026-03-19T14:15:46.448Z",
+      "updatedAt": "2026-03-19T14:15:46.448Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdrli005jkds7sb1m7ftx",
+          "shipId": "cmmxjywi7000y11a3gn6aip1s",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.926Z"
+        },
+        {
+          "id": "cmmxkdrm7005lkds7stfpkyuh",
+          "shipId": "cmmxjywi7000y11a3gn6aip1s",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.952Z"
+        },
+        {
+          "id": "cmmxkdrmj005nkds78igffr3i",
+          "shipId": "cmmxjywi7000y11a3gn6aip1s",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.963Z"
+        }
+      ],
+      "visits": [
+        {
+          "id": "cmmyw1fbk00052bzhlp4yxi3w",
+          "shipId": "cmmxjywi7000y11a3gn6aip1s",
+          "createdAt": "2026-03-20T12:41:25.713Z"
+        },
+        {
+          "id": "cmmyw7p7000072bzhfk3czuq7",
+          "shipId": "cmmxjywi7000y11a3gn6aip1s",
+          "createdAt": "2026-03-20T12:46:18.445Z"
+        },
+        {
+          "id": "cmmyw7yjg00092bzhsq9uz6hp",
+          "shipId": "cmmxjywi7000y11a3gn6aip1s",
+          "createdAt": "2026-03-20T12:46:30.556Z"
+        }
+      ]
+    },
+    {
+      "id": "cmmxjywif000z11a3vbi1tpfl",
+      "name": "가사페리호",
+      "urlSlug": "가사페리호",
+      "createdAt": "2026-03-19T14:15:46.455Z",
+      "updatedAt": "2026-03-19T14:15:46.455Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdrmx005pkds7aqe98vj2",
+          "shipId": "cmmxjywif000z11a3vbi1tpfl",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.977Z"
+        },
+        {
+          "id": "cmmxkdrn8005rkds7l1of95oj",
+          "shipId": "cmmxjywif000z11a3vbi1tpfl",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:19.988Z"
+        },
+        {
+          "id": "cmmxkdrnl005tkds7ij6bolqm",
+          "shipId": "cmmxjywif000z11a3vbi1tpfl",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.001Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywil001011a3cejfvkk8",
+      "name": "천사3호",
+      "urlSlug": "천사3호",
+      "createdAt": "2026-03-19T14:15:46.461Z",
+      "updatedAt": "2026-03-19T14:15:46.461Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdrnx005vkds7j9na3xe5",
+          "shipId": "cmmxjywil001011a3cejfvkk8",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.013Z"
+        },
+        {
+          "id": "cmmxkdro9005xkds7ti590an5",
+          "shipId": "cmmxjywil001011a3cejfvkk8",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.025Z"
+        },
+        {
+          "id": "cmmxkdrom005zkds7ll0d5j94",
+          "shipId": "cmmxjywil001011a3cejfvkk8",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.038Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywiv001111a3runfajv5",
+      "name": "뉴퀸",
+      "urlSlug": "뉴퀸",
+      "createdAt": "2026-03-19T14:15:46.471Z",
+      "updatedAt": "2026-03-19T14:15:46.471Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdrp00061kds7n706pgco",
+          "shipId": "cmmxjywiv001111a3runfajv5",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.052Z"
+        },
+        {
+          "id": "cmmxkdrpf0063kds7n1lylx6u",
+          "shipId": "cmmxjywiv001111a3runfajv5",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.067Z"
+        },
+        {
+          "id": "cmmxkdrpt0065kds7b7hqfw0s",
+          "shipId": "cmmxjywiv001111a3runfajv5",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.082Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywj4001211a3r3504b8n",
+      "name": "섬사랑16호",
+      "urlSlug": "섬사랑16호",
+      "createdAt": "2026-03-19T14:15:46.481Z",
+      "updatedAt": "2026-03-19T14:15:46.481Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdrq50067kds7t20j7bdz",
+          "shipId": "cmmxjywj4001211a3r3504b8n",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.093Z"
+        },
+        {
+          "id": "cmmxkdrqj0069kds7uw7cdppu",
+          "shipId": "cmmxjywj4001211a3r3504b8n",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.107Z"
+        },
+        {
+          "id": "cmmxkdrrj006bkds75k5uyc19",
+          "shipId": "cmmxjywj4001211a3r3504b8n",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.143Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywje001311a30w9gt831",
+      "name": "섬사랑6호",
+      "urlSlug": "섬사랑6호",
+      "createdAt": "2026-03-19T14:15:46.490Z",
+      "updatedAt": "2026-03-19T14:15:46.490Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdrrx006dkds7t5uj9yct",
+          "shipId": "cmmxjywje001311a30w9gt831",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.158Z"
+        },
+        {
+          "id": "cmmxkdrs7006fkds7bg7sxjt0",
+          "shipId": "cmmxjywje001311a30w9gt831",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.168Z"
+        },
+        {
+          "id": "cmmxkdrsi006hkds77d3qrg02",
+          "shipId": "cmmxjywje001311a30w9gt831",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.178Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywjp001411a3r6kmriox",
+      "name": "도초카훼리호",
+      "urlSlug": "도초카훼리호",
+      "createdAt": "2026-03-19T14:15:46.501Z",
+      "updatedAt": "2026-03-19T14:15:46.501Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdrsw006jkds7cioa7kdk",
+          "shipId": "cmmxjywjp001411a3r6kmriox",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.192Z"
+        },
+        {
+          "id": "cmmxkdrt7006lkds7rdqdpovl",
+          "shipId": "cmmxjywjp001411a3r6kmriox",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.203Z"
+        },
+        {
+          "id": "cmmxkdrtn006nkds7jzy2vwwb",
+          "shipId": "cmmxjywjp001411a3r6kmriox",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.219Z"
+        }
+      ],
+      "visits": []
+    },
+    {
+      "id": "cmmxjywjz001511a3absd3519",
+      "name": "섬사랑3호",
+      "urlSlug": "섬사랑3호",
+      "createdAt": "2026-03-19T14:15:46.511Z",
+      "updatedAt": "2026-03-19T14:15:46.511Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdrty006pkds7jhhh9sq1",
+          "shipId": "cmmxjywjz001511a3absd3519",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.230Z"
+        },
+        {
+          "id": "cmmxkdrue006rkds7iqmhnp2v",
+          "shipId": "cmmxjywjz001511a3absd3519",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.246Z"
+        },
+        {
+          "id": "cmmxkdruy006tkds7g8rddkou",
+          "shipId": "cmmxjywjz001511a3absd3519",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.267Z"
+        }
+      ],
+      "visits": [
+        {
+          "id": "cmmxkats50006mmnas7tj33pf",
+          "shipId": "cmmxjywjz001511a3absd3519",
+          "createdAt": "2026-03-19T14:25:02.786Z"
+        }
+      ]
+    },
+    {
+      "id": "cmmxjywk9001611a3dn8w6zjm",
+      "name": "섬사랑11호",
+      "urlSlug": "섬사랑11호",
+      "createdAt": "2026-03-19T14:15:46.521Z",
+      "updatedAt": "2026-03-19T14:15:46.521Z",
+      "checklistUrl": null,
+      "regulationsUrl": null,
+      "safetyInfoUrl": null,
+      "links": [
+        {
+          "id": "cmmxkdrvb006vkds76gyz0434",
+          "shipId": "cmmxjywk9001611a3dn8w6zjm",
+          "title": "여객선 교통정보 서비스(PATIS)",
+          "icon": null,
+          "url": "https://mtis.komsa.or.kr/traffic/ferryInfo",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.280Z"
+        },
+        {
+          "id": "cmmxkdrw3006xkds74gotgl1l",
+          "shipId": "cmmxjywk9001611a3dn8w6zjm",
+          "title": "여객선 어때(VR체험)",
+          "icon": null,
+          "url": "https://www.komsa.or.kr/kor/sub03_021101.do",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.307Z"
+        },
+        {
+          "id": "cmmxkdrwk006zkds7ilpifiva",
+          "shipId": "cmmxjywk9001611a3dn8w6zjm",
+          "title": "전기차 배터리 점검서비스",
+          "icon": null,
+          "url": "https://ev-booking-aad7a.web.app/",
+          "clicks": 0,
+          "createdAt": "2026-03-19T14:27:20.324Z"
+        }
+      ],
+      "visits": []
+    }
+  ],
+  "systemConfig": [
+    {
+      "id": "global",
+      "totalVisitors": 22,
+      "tomorrowWeather": "내일은 목포 관내 날씨가 양호하여 모든선박 정상운항 예정입니다."
+    }
+  ]
+}

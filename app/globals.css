@@ -1,0 +1,54 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+:root {
+  color-scheme: light;
+  /* KOMSA 공식 브랜드 컬러 적용 */
+  --primary: #13388E; 
+  --secondary: #00A3DD;
+  --bg-color: #F8FAFC; /* 기존 그라데이션 대신 폰에서도 어둡지 않은 아주 맑고 밝은 톤 */
+  --surface: #ffffff;
+  --surface-border: #E2E8F0;
+  --text-dark: #1E293B;
+  --text-light: #64748B;
+  --font-family: 'Pretendard', sans-serif;
+  --ocean-gradient: linear-gradient(135deg, #13388E 0%, #00A3DD 100%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--bg-color);
+  color: var(--text-dark);
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glass & Clean Card Utilities */
+.glass-card {
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(19, 56, 142, 0.04);
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.glass-card:active {
+  transform: scale(0.98);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+button, input {
+  font-family: inherit;
+}

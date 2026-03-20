@@ -1,0 +1,53 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Ship {
+  id             String     @id @default(cuid())
+  name           String
+  urlSlug        String     @unique
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+  checklistUrl   String?
+  regulationsUrl String?
+  safetyInfoUrl  String?
+  links          ShipLink[]
+  visits         Visit[]
+}
+
+model ShipLink {
+  id        String   @id @default(cuid())
+  shipId    String
+  title     String
+  icon      String?
+  url       String
+  clicks    Int      @default(0)
+  createdAt DateTime @default(now())
+  ship      Ship     @relation(fields: [shipId], references: [id], onDelete: Cascade)
+}
+
+model Visit {
+  id        String   @id @default(cuid())
+  shipId    String
+  createdAt DateTime @default(now())
+  ship      Ship     @relation(fields: [shipId], references: [id], onDelete: Cascade)
+}
+
+model SystemConfig {
+  id              String @id @default("global")
+  totalVisitors   Int    @default(0)
+  tomorrowWeather String @default("내일의 운항 예보는 날씨가 양호합니다.")
+}
+
+model ClickEvent {
+  id        String   @id @default(cuid())
+  shipId    String
+  title     String
+  createdAt DateTime @default(now())
+}

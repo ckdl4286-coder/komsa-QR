@@ -1,0 +1,19 @@
+.container { padding: 1.5rem; padding-bottom: 4rem; max-width: 500px; margin: 0 auto; min-height: 100vh; background: #f8fafc; }
+.header { text-align: center; margin-bottom: 2rem; padding: 2rem 1rem 3rem 1rem; background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%); border-radius: 0 0 24px 24px; margin-top: -1.5rem; margin-inline: -1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.02); }
+.characterBox { width: 80px; height: 80px; background: #e0f2fe; border-radius: 50%; margin: 0 auto 1rem auto; display: flex; align-items: center; justify-content: center; color: var(--secondary); font-weight: bold; font-size: 0.8rem; border: 2px solid var(--secondary); }
+.shipName { font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem; letter-spacing: -0.5px; }
+.subTitle { font-size: 0.95rem; color: var(--text-light); font-weight: 500; }
+
+.statusBox { background: #ffffff; border: 2px solid #0ea5e9; border-radius: 20px; padding: 1.5rem; text-align: center; box-shadow: 0 8px 30px rgba(14, 165, 233, 0.15); margin-top: -4rem; position: relative; z-index: 10; margin-bottom: 2.5rem; }
+.statusBadge { display: inline-block; background: #dcfce7; color: #16a34a; padding: 0.6rem 1.2rem; border-radius: 99px; font-weight: 800; font-size: 1.25rem; margin-bottom: 0.75rem; border: 1px solid #bbf7d0; letter-spacing: -0.5px; }
+.statusDesc { font-size: 1.05rem; color: var(--text-dark); font-weight: 600; margin-bottom: 1.5rem; line-height: 1.4; }
+.statusBtn { display: block; background: var(--primary); color: white; padding: 1rem; border-radius: 14px; font-weight: 700; font-size: 1.1rem; box-shadow: 0 6px 16px rgba(19, 56, 142, 0.25); text-decoration: none; transition: transform 0.2s; }
+.statusBtn:active { transform: scale(0.97); }
+
+.section { margin-top: 2rem; }
+.sectionTitle { font-size: 1.3rem; font-weight: 900; color: var(--primary); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.4rem; padding-left: 0.2rem; }
+
+.actionItem { display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 1rem; margin-bottom: 0.8rem; text-decoration: none; }
+.actionItemLeft { display: flex; align-items: center; gap: 1rem; }
+.iconBox { padding: 0.5rem; border-radius: 12px; display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; }
+.actionTitle { font-size: 1.15rem; font-weight: 800; letter-spacing: -0.3px; color: var(--primary); }
