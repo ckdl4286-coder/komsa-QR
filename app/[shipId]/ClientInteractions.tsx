@@ -49,11 +49,11 @@ export function FavoriteButton({ shipId }: { shipId: string }) {
     <button 
       onClick={toggleFavorite}
       style={{
-        background: 'rgba(255, 255, 255, 0.1)',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
+        background: 'rgba(255, 255, 255, 0.12)',
+        border: '1px solid rgba(255, 255, 255, 0.25)',
         borderRadius: '50%',
-        width: '46px',
-        height: '46px',
+        width: '42px',
+        height: '42px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -61,10 +61,17 @@ export function FavoriteButton({ shipId }: { shipId: string }) {
         transition: 'all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
         backdropFilter: 'blur(10px)',
         color: isFavorite ? '#ff4d4d' : '#fff',
-        boxShadow: isFavorite ? '0 0 20px rgba(255, 77, 77, 0.5)' : 'none'
+        boxShadow: isFavorite ? '0 0 20px rgba(255, 77, 77, 0.6)' : 'none',
+        flexShrink: 0 // 절대 찌그러지지 않게
       }}
+      className={isFavorite ? 'pulse' : ''}
     >
-      <Heart fill={isFavorite ? '#ff4d4d' : 'none'} size={24} strokeWidth={isFavorite ? 0 : 2} />
+      <Heart 
+        fill={isFavorite ? '#ff4d4d' : 'none'} 
+        size={22} 
+        strokeWidth={isFavorite ? 0.5 : 2.5} 
+        style={{ filter: isFavorite ? 'drop-shadow(0 0 5px rgba(255, 77, 77, 0.8))' : 'none' }}
+      />
     </button>
   );
 }

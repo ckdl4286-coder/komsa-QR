@@ -53,11 +53,11 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
               boxShadow: '0 12px 40px rgba(0,0,0,0.5)'
             }}
           />
-          <div style={{ position: 'absolute', top: '-10px', right: '-10px', zIndex: 10 }}>
-            <FavoriteButton shipId={ship.id} />
-          </div>
         </div>
-        <h1 className={styles.shipName}>{ship.name}</h1>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '0.2rem' }}>
+          <h1 className={styles.shipName} style={{ marginBottom: 0 }}>{ship.name}</h1>
+          <FavoriteButton shipId={ship.id} />
+        </div>
         <div className={styles.subTitle}>
            KOREA MARITIME TRANSPORTATION SAFETY AUTHORITY
         </div>
