@@ -27,18 +27,40 @@ export default async function AdminPage() {
     );
   }
 
-  const config = await prisma.systemConfig.findUnique({ where: { id: 'global' } });
-  const ships = await prisma.ship.findMany({ 
-    include: { 
-      links: true, 
-      visits: { select: { createdAt: true } } 
-    },
-    orderBy: { createdAt: 'desc' } 
-  });
-  
-  const allClickEvents = await prisma.clickEvent.findMany();
+  let config = null;
+  let ships: any[] = [];
+  let allClickEvents: any[] = [];
+  let dbError = null;
 
+  try {
+    config = await prisma.systemConfig.findUnique({ where: { id: 'global' } });
+    ships = await prisma.ship.findMany({ 
+      include: { 
+        links: true, 
+        visits: { select: { createdAt: true } } 
+      },
+      orderBy: { createdAt: 'desc' } 
+    });
+    allClickEvents = await prisma.clickEvent.findMany();
+  } catch (e: any) {
+    console.error('DB 로딩 오류:', e);
+    dbError = e.message || '데이터베이스 연결에 실패했습니다.';
+  }
+  
   const urlOrigin = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+
+  if (dbError) {
+    return (
+      <div className={styles.layout} style={{ padding: '2rem', textAlign: 'center' }}>
+        <h2 style={{ color: '#e11d48' }}>⚠️ 데이터베이스 연결 오류</h2>
+        <p style={{ marginTop: '1rem', color: '#64748b' }}>{dbError}</p>
+        <p style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}>Vercel의 환경 변수(DATABASE_URL) 설정을 다시 확인해 주세요.</p>
+        <form action={logout} style={{ marginTop: '2rem' }}>
+          <button type="submit" className={styles.previewBtn} style={{background:'#1a6e83', color:'white', border:'none'}}>로그아웃 후 다시 시도</button>
+        </form>
+      </div>
+    );
+  }
 
   return (
     <div className={styles.layout}>
