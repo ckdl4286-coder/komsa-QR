@@ -12,9 +12,16 @@ export function Tracker({ shipId }: { shipId: string }) {
 }
 
 export function ActionButton({ 
-  shipId, linkId, url, title, iconName, primary = false 
+  shipId, linkId, url, title, iconName, primary = false, description, guideText
 }: { 
-  shipId: string; linkId?: string; url: string; title: string; iconName: string; primary?: boolean 
+  shipId: string; 
+  linkId?: string; 
+  url: string; 
+  title: string; 
+  iconName: string; 
+  primary?: boolean;
+  description?: string;
+  guideText?: string;
 }) {
   const handleClick = () => {
     if (url) {
@@ -23,14 +30,11 @@ export function ActionButton({
   };
 
   const getIcon = () => {
-    if(iconName === 'CheckSquare') return <CheckSquare size={24} />;
-    if(iconName === 'Navigation') return <Navigation size={24} />;
-    if(iconName === 'Info') return <Info size={24} />;
-    if(iconName === 'Zap') return <Zap size={24} />;
-    if(iconName === 'Bus') return <Bus size={24} />;
-    if(iconName === 'CalendarClock') return <CalendarClock size={24} />;
-    if(iconName === 'Anchor') return <Anchor size={24} />;
-    return <ExternalLink size={24} />;
+    if(iconName === 'CheckSquare') return <CheckSquare size={22} />;
+    if(iconName === 'Navigation') return <Navigation size={22} />;
+    if(iconName === 'Anchor') return <Anchor size={22} />;
+    if(iconName === 'ExternalLink') return <ExternalLink size={20} />;
+    return <ChevronRight size={20} />;
   };
 
   return (
@@ -40,14 +44,28 @@ export function ActionButton({
       rel="noopener noreferrer" 
       onClick={handleClick}
       className={`${styles.actionItem} ${primary ? styles.actionItemPrimary : ''}`}
+      style={{ flexDirection: 'column', alignItems: 'flex-start', padding: description ? '1.4rem' : '1.1rem 1.25rem' }}
     >
-      <div className={styles.actionItemLeft}>
-        <div className={styles.iconBox}>
-          {getIcon()}
+      <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center', marginBottom: description ? '0.6rem' : '0' }}>
+        <div className={styles.actionItemLeft}>
+          <div className={styles.iconBox}>
+            {getIcon()}
+          </div>
+          <span className={styles.actionTitle}>{title}</span>
         </div>
-        <span className={styles.actionTitle}>{title}</span>
+        {guideText && (
+          <span className={styles.actionGuide}>
+            {guideText} <ChevronRight size={14} />
+          </span>
+        )}
       </div>
-      <ChevronRight size={18} style={{ opacity: 0.5, color: '#fff' }} />
+      
+      {description && (
+        <span className={styles.actionDesc}>
+          {description}
+        </span>
+      )}
+      {!guideText && !description && <ChevronRight size={18} style={{ position: 'absolute', right: '1.25rem', opacity: 0.5, color: '#fff' }} />}
     </a>
   );
 }

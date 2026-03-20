@@ -100,22 +100,66 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
 
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>
-           <ShieldCheck size={18} /> 필수 안전 정보
+           <ShieldCheck size={18} /> 필수 안전 정보 (출항 전 확인)
         </h2>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
-          <ActionButton shipId={ship.id} linkId="core" url={ship.checklistUrl || ""} title="출항 전 점검표 확인" iconName="CheckSquare" primary={true} />
-          <ActionButton shipId={ship.id} linkId="core" url={ship.regulationsUrl || ""} title="운항관리규정 전문" iconName="Navigation" primary={false} />
-          <ActionButton shipId={ship.id} linkId="core" url={ship.safetyInfoUrl || ""} title="여객선 안전정보 공시" iconName="Anchor" primary={false} />
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <ActionButton 
+            shipId={ship.id} 
+            linkId="core_checklist" 
+            url={ship.checklistUrl || ""} 
+            title="출항 전 점검표" 
+            description="매 출항 전 실시하는 점검에 따른 가장 최신의 점검표를 바로 확인해보세요!"
+            guideText="확인하기"
+            iconName="CheckSquare" 
+            primary={true} 
+          />
+          <ActionButton 
+            shipId={ship.id} 
+            linkId="core_regulations" 
+            url={ship.regulationsUrl || ""} 
+            title="운항관리규정" 
+            description="선박의 날씨 통제규정, 차량 적재량, 허용 위험물 등을 확인하세요!"
+            guideText="기준보기"
+            iconName="Navigation" 
+            primary={false} 
+          />
+          <ActionButton 
+            shipId={ship.id} 
+            linkId="core_safety" 
+            url={ship.safetyInfoUrl || ""} 
+            title="여객선 안전정보" 
+            description="우리배의 선박검사 일정과 사고이력을 투명하게 확인하세요!"
+            guideText="조회하기"
+            iconName="Anchor" 
+            primary={false} 
+          />
         </div>
       </section>
 
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>
-           <Activity size={18} /> 추가 편의 서비스
+           <Activity size={18} /> 편리한 부가 서비스
         </h2>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <ActionButton 
+            shipId={ship.id} 
+            linkId="service_patis" 
+            url="https://mtis.komsa.or.kr/viewer/m" 
+            title="PATIS 실시간 여객선 정보" 
+            description="전국 여객선 위치 확인 및 항로 정보 제공"
+            guideText="이동하기"
+            iconName="ExternalLink" 
+          />
           {ship.links.map((link: any) => (
-            <ActionButton key={link.id} shipId={ship.id} linkId={link.id} url={link.url} title={link.title} iconName={link.icon || 'ExternalLink'} />
+            <ActionButton 
+              key={link.id} 
+              shipId={ship.id} 
+              linkId={link.id} 
+              url={link.url} 
+              title={link.title} 
+              description={link.title.includes('VR') ? '가상현실로 만나는 여객선 안전 교육' : ''}
+              iconName={link.icon || 'ExternalLink'} 
+            />
           ))}
         </div>
       </section>
