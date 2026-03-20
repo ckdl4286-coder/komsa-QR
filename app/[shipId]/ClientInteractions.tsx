@@ -12,7 +12,7 @@ export function Tracker({ shipId }: { shipId: string }) {
 }
 
 export function ActionButton({ 
-  shipId, linkId, url, title, iconName, primary = false, description, guideText
+  shipId, linkId, url, title, iconName, primary = false, description, guideText, isFree = false
 }: { 
   shipId: string; 
   linkId?: string; 
@@ -22,6 +22,7 @@ export function ActionButton({
   primary?: boolean;
   description?: string;
   guideText?: string;
+  isFree?: boolean;
 }) {
   const handleClick = () => {
     if (url) {
@@ -64,6 +65,9 @@ export function ActionButton({
         <span className={styles.actionDesc}>
           {description}
         </span>
+      )}
+      {isFree && (
+        <span className={styles.freeBadge}>무료</span>
       )}
       {!guideText && !description && <ChevronRight size={18} style={{ position: 'absolute', right: '1.25rem', opacity: 0.5, color: '#fff' }} />}
     </a>

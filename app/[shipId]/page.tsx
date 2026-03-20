@@ -136,11 +136,22 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
         </div>
       </section>
 
-      <section className={styles.section}>
+      <section className={styles.section} style={{ display: schedules && schedules.length > 0 ? 'block' : 'none' }}>
         <h2 className={styles.sectionTitle}>
-           <Activity size={18} /> 편리한 부가 서비스
+           <Activity size={18} /> 편리한 부가 서비스 (추가 안내)
         </h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          {/* 수동 추가 서비스 (시안 기준) */}
+          <ActionButton 
+            shipId={ship.id} 
+            linkId="service_ev" 
+            url="https://docs.google.com/forms/d/e/1FAIpQLSfcl6G0YvPZq3i7mXclG0n_p2mYp6F7_..." 
+            title="전기차 배터리 점검 서비스" 
+            description="출항 전 전기차 배터리 안심 점검 예약을 도와드립니다."
+            guideText="예약하기"
+            isFree={true}
+            iconName="ShieldCheck" 
+          />
           <ActionButton 
             shipId={ship.id} 
             linkId="service_patis" 
@@ -150,14 +161,18 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
             guideText="이동하기"
             iconName="ExternalLink" 
           />
-          {ship.links.map((link: any) => (
+
+          {/* DB 링크 (중복 제외) */}
+          {ship.links
+            .filter((link: any) => !link.title.includes('PATIS') && !link.title.includes('전기차'))
+            .map((link: any) => (
             <ActionButton 
               key={link.id} 
               shipId={ship.id} 
               linkId={link.id} 
               url={link.url} 
               title={link.title} 
-              description={link.title.includes('VR') ? '가상현실로 만나는 여객선 안전 교육' : ''}
+              description={link.title.includes('VR') ? '가상현실로 만나는 여객선 안전 교육' : '여객선을 위한 편리한 부가 서비스를 이용해보세요!'}
               iconName={link.icon || 'ExternalLink'} 
             />
           ))}
