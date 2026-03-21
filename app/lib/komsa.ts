@@ -144,9 +144,10 @@ export function getStatusInfo(schedule: SailSchedule | null | undefined): {
     schedule.cnls_etc_rsn ||
     undefined;
 
-  // 1. 키워드 기반 정상 판별 (코드가 6(대기/지연)이나 기타여도 텍스트가 정상이면 정상으로 간주)
+  // 1. 키워드 기반 정상 판별
   const isHealthy = 
     labelText.includes('정상') || 
+    labelText.includes('완료') || 
     labelText.includes('운항중') || 
     labelText.includes('증선') || 
     labelText.includes('증회') ||
@@ -154,11 +155,11 @@ export function getStatusInfo(schedule: SailSchedule | null | undefined): {
 
   if (isHealthy) {
     return { 
-      label: labelText.includes('정상') ? '정상 운항 예정' : (labelText || '정상 운항'), 
+      label: '정상 운항', 
       emoji: '🟢', 
-      color: '#166534', 
+      color: '#16a34a', 
       bgColor: '#dcfce7', 
-      reason: undefined // 정상일 때는 사유 노출 금지
+      reason: undefined 
     };
   }
 

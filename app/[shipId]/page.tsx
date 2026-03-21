@@ -45,51 +45,47 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
             src="/haesooho_hello.jpg"
             alt="해수호 캐릭터"
             style={{
-              width: '80px', height: '80px', objectFit: 'cover',
-              borderRadius: '50%', border: '3px solid rgba(255,255,255,0.4)',
+              width: '85px', height: '85px', objectFit: 'cover',
+              borderRadius: '50%', border: '4px solid rgba(255,255,255,0.3)',
               background: 'rgba(255,255,255,0.2)',
               boxShadow: '0 8px 25px rgba(0,0,0,0.3)'
             }}
           />
           <div style={{ textAlign: 'left' }}>
-             <div style={{ fontSize: '0.8rem', color: '#00d4ff', fontWeight: 900, marginBottom: '2px', letterSpacing: '-0.5px' }}>한국해양교통안전공단</div>
-             <div style={{ fontSize: '1.1rem', color: '#fff', fontWeight: 700 }}>목포운항관리센터</div>
+             <div style={{ fontSize: '0.8rem', color: '#00d4ff', fontWeight: 900, marginBottom: '2px' }}>한국해양교통안전공단</div>
+             <div style={{ fontSize: '1.2rem', color: '#fff', fontWeight: 800 }}>목포운항관리센터</div>
           </div>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginTop: '1.2rem', marginBottom: '0.2rem' }}>
-          <h1 className={styles.shipName} style={{ fontSize: '2.2rem', marginBottom: 0, letterSpacing: '-1px' }}>{ship.name}</h1>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginTop: '1.5rem', marginBottom: '0.2rem' }}>
+          <h1 className={styles.shipName} style={{ fontSize: '2.4rem', marginBottom: 0 }}>{ship.name}</h1>
           <FavoriteButton shipId={ship.id} />
-        </div>
-        <div style={{ marginTop: '0.3rem', fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)', fontWeight: 500 }}>
-           SAFE NAVIGATION INFORMATION PORTAL
         </div>
       </header>
 
-      {/* 🟢 핵심 개선: 지금 상태 바로 띄우기 & 업데이트 시간 복구 */}
-      <div className={styles.statusBox} style={{ marginTop: '-1.5rem', zIndex: 10, position: 'relative', boxShadow: '0 20px 40px rgba(0,0,0,0.3)' }}>
-        <div className={styles.statusLabelContainer} style={{ marginBottom: '0.8rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <span className={styles.statusLabel} style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)' }}>
-             ● 실시간 API 데이터 연동 중
+      <div className={styles.statusBox}>
+        <div className={styles.statusLabelContainer}>
+          <span className={styles.statusLabel}>
+             ● 실시간 데이터 연동 중 
           </span>
-          <span className={styles.updateTime} style={{ fontSize: '0.75rem', color: '#00d4ff', fontWeight: 700 }}>
+          <span className={styles.updateTime}>
              방금 업데이트됨
           </span>
         </div>
         
         <div
-          className={`${styles.statusBadge} ${statusInfo.label.includes('정상') ? styles.glowing : ''}`}
+          className={`${styles.statusBadge} glowing`}
           style={{ 
             background: statusInfo.color, color: '#fff', width: '100%', 
             justifyContent: 'center', fontSize: '1.6rem', padding: '1.25rem',
-            borderRadius: '24px', fontWeight: 900, textShadow: '0 2px 10px rgba(0,0,0,0.2)'
+            borderRadius: '20px', fontWeight: 900, textShadow: '0 2px 8px rgba(0,0,0,0.1)'
           }}
         >
           {statusInfo.emoji} {statusInfo.label}
         </div>
 
-        <div style={{ marginTop: '1.2rem', textAlign: 'center' }}>
-           <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.8rem', marginBottom: '0.6rem' }}>
-              ※ 상세 운항 시간 및 변동 사항은 네이버 밴드에서 확인하세요.
+        <div style={{ marginTop: '1.5rem' }}>
+           <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', marginBottom: '0.8rem', textAlign: 'center' }}>
+              ※ 상세 운항 시간 및 변동 사항 확인 (밴드)
            </p>
            <BandStatusButton shipId={ship.id} />
         </div>
