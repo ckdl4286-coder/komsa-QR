@@ -9,7 +9,7 @@ import { fetchShipSchedule, getStatusInfo, formatTime, formatDate } from '../lib
 export const dynamic = 'force-dynamic';
 export const revalidate = 0; // 캐시 즉시 무효화
 
-// [Build Version: 2026.03.21.0925] - UI/UX 완벽 갱신용
+// [Build Version: 2026.03.21.1125] - UI Sync Force Refresh
 export default async function ShipPage({ params }: { params: Promise<{ shipId: string }> }) {
   const { shipId } = await params;
   const decodedSlug = decodeURIComponent(shipId);
