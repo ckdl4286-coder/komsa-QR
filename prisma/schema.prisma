@@ -26,6 +26,7 @@ model ShipLink {
   id        String   @id @default(cuid())
   shipId    String
   title     String
+  description String?
   icon      String?
   url       String
   clicks    Int      @default(0)
