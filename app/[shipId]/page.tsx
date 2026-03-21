@@ -9,7 +9,7 @@ import { fetchShipSchedule, getStatusInfo, formatTime, formatDate } from '../lib
 export const dynamic = 'force-dynamic';
 export const revalidate = 0; // 캐시 즉시 무효화
 
-// [Build Version: 2026.03.21.1125] - UI Sync Force Refresh
+// [Build Version: 2026.03.21.1140] - Final UI Sync (Time Badge & Admin Edit UI)
 export default async function ShipPage({ params }: { params: Promise<{ shipId: string }> }) {
   const { shipId } = await params;
   const decodedSlug = decodeURIComponent(shipId);
@@ -108,13 +108,27 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
           {/* 🕐 운항 정보 리스트 - 세로형 복구 (가독성 증대) */}
           {schedules && schedules.length > 0 && (
             <div style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.85)', marginTop: '0.5rem', padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)' }}>
-              {schedules.slice(0, 3).map((s:any, i:number) => (
-                <div key={i} style={{ display: 'flex', gap: '0.6rem', justifyContent: 'center', marginBottom: '0.4rem' }}>
-                  <span style={{ fontWeight: 800 }}>🕐 {formatTime(s.sail_tm)}</span>
-                  <span style={{ opacity: 0.4 }}>|</span>
-                  <span style={{ fontWeight: 500 }}>{s.oport_nm} ➔ {s.dest_nm}</span>
-                </div>
-              ))}
+               {schedules.slice(0, 3).map((s:any, i:number) => {
+                 const statusTxt = s.sail_st || '정상';
+                 const isCancel = statusTxt.includes('통제') || statusTxt.includes('결항');
+                 const statusColor = isCancel ? '#ff5252' : '#52ff82';
+                 
+                 return (
+                   <div key={i} style={{ display: 'flex', gap: '0.6rem', alignItems: 'center', justifyContent: 'center', marginBottom: '0.6rem' }}>
+                     <span style={{ fontWeight: 900, fontSize: '0.95rem', color: '#fff' }}>🕐 {formatTime(s.sail_tm)}</span>
+                     <span 
+                       style={{ 
+                         fontSize: '0.7rem', fontWeight: 900, padding: '2px 8px', borderRadius: '4px', 
+                         background: `${statusColor}22`, border: `1px solid ${statusColor}55`, color: statusColor 
+                       }}
+                     >
+                       {statusTxt}
+                     </span>
+                     <span style={{ opacity: 0.2 }}>|</span>
+                     <span style={{ fontWeight: 500, fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)' }}>{s.oport_nm} ➔ {s.dest_nm}</span>
+                   </div>
+                 );
+               })}
             </div>
           )}
 
