@@ -186,6 +186,8 @@ export function ActionButton({
     }
   };
 
+  if (!url || url === 'tracking-only') return null;
+
   const getIcon = () => {
     if(iconName === 'CheckSquare') return <CheckSquare size={22} />;
     if(iconName === 'Navigation') return <Navigation size={22} />;
