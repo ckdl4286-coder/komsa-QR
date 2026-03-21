@@ -7,6 +7,9 @@ import { Ship, ShieldCheck, Activity } from 'lucide-react';
 import { fetchShipSchedule, getStatusInfo, formatTime, formatDate } from '../lib/komsa';
 
 export const dynamic = 'force-dynamic';
+export const revalidate = 0; // 캐시 즉시 무효화
+
+// [Build Version: 2026.03.21.0918] - UI 및 레이아웃 강제 갱신용 주석
 
 export default async function ShipPage({ params }: { params: Promise<{ shipId: string }> }) {
   const { shipId } = await params;
