@@ -173,7 +173,7 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
         </div>
       </section>
 
-      <section className={styles.section}>
+      <section className={styles.section} style={{ marginTop: '2.5rem' }}>
         <h2 className={styles.sectionTitle}>
            <Activity size={18} /> 편리한 부가 서비스 안내
         </h2>
@@ -206,40 +206,23 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
             isFree={true}
             iconName="ShieldCheck" 
           />
-
-          {/* DB 링크 (중복 절대 제외) */}
-          {ship.links
-            .filter((link: any) => 
-               !link.title.includes('PATIS') && 
-               !link.title.includes('전기차') && 
-               !link.title.includes('밴드') &&
-               !link.title.includes('VR') &&
-               !link.title.includes('어때') &&
-               !link.title.includes('운항관리규정') &&
-               !link.title.includes('안전정보') &&
-               !link.title.includes('점검표') &&
-               !link.url.includes('band.us') &&
-               !link.url.includes('komsa.or.kr/viewer') &&
-               !link.url.includes('docs.google.com/forms') 
-            )
-            .map((link: any) => (
-            <ActionButton 
-              key={link.id} 
-              shipId={ship.id} 
-              linkId={link.id} 
-              url={link.url} 
-              title={link.title} 
-              description={link.title.includes('VR') ? '가상현실로 보는 여객선 안전 교육' : '편리한 부가 서비스를 이용해보세요!'}
-              iconName={link.icon || 'ExternalLink'} 
-            />
-          ))}
         </div>
       </section>
 
-      <footer style={{ textAlign: 'center', marginTop: '4rem', paddingBottom: '3rem', fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2.5rem' }}>
-         <p style={{ fontWeight: 800, color: 'rgba(255,255,255,0.6)', marginBottom: '1rem', fontSize: '0.95rem' }}>한국해양교통안전공단 목포운항관리센터</p>
+      <footer style={{ textAlign: 'center', marginTop: '4rem', paddingBottom: '3.5rem', fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2.5rem' }}>
+         <div style={{ marginBottom: '2rem', padding: '1.2rem', background: 'rgba(0,212,255,0.05)', borderRadius: '20px', border: '1px solid rgba(0,212,255,0.15)', display: 'inline-block', minWidth: '280px' }}>
+           <p style={{ color: 'rgba(255,255,255,0.6)', marginBottom: '8px', fontWeight: 600, fontSize: '0.9rem' }}>여객선 안전정보 문의</p>
+           <a 
+             href="tel:0507-1352-9457" 
+             style={{ fontSize: '1.6rem', color: '#00d4ff', fontWeight: 900, textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+           >
+             📞 0507-1352-9457
+           </a>
+         </div>
+         
+         <p style={{ fontWeight: 800, color: 'rgba(255,255,255,0.6)', marginBottom: '1rem', fontSize: '1rem' }}>한국해양교통안전공단 목포운항관리센터</p>
          <p>© {new Date().getFullYear()} MOPO MARITIME SAFETY. 본 관리 시스템의 모든 권리는 공단에 있습니다.</p>
-         <p style={{ marginTop: '10px', letterSpacing: '0.5px', color: '#00d4ff', fontWeight: 600 }}>세상에서 가장 안전한 바닷길을 만듭니다.</p>
+         <p style={{ marginTop: '12px', letterSpacing: '0.5px', color: '#00d4ff', fontWeight: 600, fontSize: '0.85rem' }}>세상에서 가장 안전한 바닷길을 만듭니다.</p>
       </footer>
     </div>
   );
