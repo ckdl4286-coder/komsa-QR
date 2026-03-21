@@ -210,19 +210,19 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
       </section>
 
       <footer style={{ textAlign: 'center', marginTop: '4rem', paddingBottom: '3.5rem', fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2.5rem' }}>
-         <div style={{ marginBottom: '2rem', padding: '1.2rem', background: 'rgba(0,212,255,0.05)', borderRadius: '20px', border: '1px solid rgba(0,212,255,0.15)', display: 'inline-block', minWidth: '280px' }}>
-           <p style={{ color: 'rgba(255,255,255,0.6)', marginBottom: '8px', fontWeight: 600, fontSize: '0.9rem' }}>여객선 안전정보 문의</p>
+         <div style={{ marginBottom: '1.2rem', padding: '0.6rem 1rem', background: 'rgba(255,255,255,0.03)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)', display: 'inline-block' }}>
+           <span style={{ color: 'rgba(255,255,255,0.5)', marginRight: '8px', fontWeight: 500 }}>여객선 안전정보 문의</span>
            <a 
              href="tel:0507-1352-9457" 
-             style={{ fontSize: '1.6rem', color: '#00d4ff', fontWeight: 900, textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+             style={{ fontSize: '1.1rem', color: '#00d4ff', fontWeight: 800, textDecoration: 'none' }}
            >
-             📞 0507-1352-9457
+             0507-1352-9457
            </a>
          </div>
          
-         <p style={{ fontWeight: 800, color: 'rgba(255,255,255,0.6)', marginBottom: '1rem', fontSize: '1rem' }}>한국해양교통안전공단 목포운항관리센터</p>
+         <p style={{ fontWeight: 800, color: 'rgba(255,255,255,0.6)', marginBottom: '1rem', fontSize: '0.9rem' }}>한국해양교통안전공단 목포운항관리센터</p>
          <p>© {new Date().getFullYear()} MOPO MARITIME SAFETY. 본 관리 시스템의 모든 권리는 공단에 있습니다.</p>
-         <p style={{ marginTop: '12px', letterSpacing: '0.5px', color: '#00d4ff', fontWeight: 600, fontSize: '0.85rem' }}>세상에서 가장 안전한 바닷길을 만듭니다.</p>
+         <p style={{ marginTop: '10px', letterSpacing: '0.5px', color: '#00d4ff', fontWeight: 600, fontSize: '0.8rem' }}>세상에서 가장 안전한 바닷길을 만듭니다.</p>
       </footer>
     </div>
   );
