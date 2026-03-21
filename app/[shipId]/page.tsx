@@ -65,60 +65,61 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
         </div>
       </header>
 
-      <div className={styles.statusBox}>
-        <div className={styles.statusLabelContainer} style={{ marginBottom: '1rem' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-            <span className={styles.statusLabel} style={{ fontSize: '0.75rem', opacity: 0.8 }}>
-               ● 실시간 데이터 연동 중 
-            </span>
+      <div className={styles.statusBox} style={{ padding: '0.8rem 1rem', marginBottom: '1.2rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          {/* 📅 날짜와 🚢 상태를 한 줄로 결합! (헤더처럼 웅장하게) */}
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', flexWrap: 'wrap' }}>
             <div style={{ 
-              fontSize: '1rem', color: '#00d4ff', fontWeight: 900, 
-              letterSpacing: '-0.5px', background: 'rgba(0,212,255,0.1)',
-              padding: '4px 10px', borderRadius: '12px', border: '1px solid rgba(0,212,255,0.2)'
+              fontSize: '0.95rem', color: '#00d4ff', fontWeight: 900, 
+              letterSpacing: '-0.5px', background: 'rgba(0,212,255,0.08)',
+              padding: '6px 12px', borderRadius: '12px', border: '1px solid rgba(0,212,255,0.15)',
+              display: 'flex', alignItems: 'center', gap: '5px'
             }}>
-              📅 {displayDate} 운항 기준
+              📅 {displayDate} 기준
+            </div>
+            
+            <div className="glowing" style={{ 
+              background: statusInfo.color, color: '#fff', 
+              padding: '6px 16px', borderRadius: '12px', fontWeight: 900, 
+              fontSize: '1.2rem', boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
+              display: 'flex', alignItems: 'center', gap: '6px'
+            }}>
+              {statusInfo.emoji} {statusInfo.label}
             </div>
           </div>
-          <span className={styles.updateTime} style={{ alignSelf: 'flex-start', marginTop: '4px' }}>
-             방금 업데이트됨
-          </span>
-        </div>
-        
-        <div
-          className={`${styles.statusBadge} glowing`}
-          style={{ 
-            background: statusInfo.color, color: '#fff', width: '100%', 
-            justifyContent: 'center', fontSize: '1.6rem', padding: '1.25rem',
-            borderRadius: '20px', fontWeight: 900, textShadow: '0 2px 8px rgba(0,0,0,0.1)'
-          }}
-        >
-          {statusInfo.emoji} {statusInfo.label}
-        </div>
 
-        {/* 출항 시간 및 항로 - 배지 바로 아래 표시 */}
-        {schedules && schedules.length > 0 && (
-          <div style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.85)', marginTop: '1rem', padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)' }}>
-            {schedules.slice(0, 3).map((s:any, i:number) => (
-              <div key={i} style={{ display: 'flex', gap: '0.6rem', justifyContent: 'center', marginBottom: '0.3rem' }}>
-                <span style={{ fontWeight: 800 }}>🕐 {formatTime(s.sail_tm)}</span>
-                <span style={{ opacity: 0.4 }}>|</span>
-                <span style={{ fontWeight: 500 }}>{s.oport_nm} ➔ {s.dest_nm}</span>
-              </div>
-            ))}
+          {/* 🕐 출항 시간 (심플하게 옆으로) */}
+          {schedules && schedules.length > 0 && (
+            <div style={{ 
+              fontSize: '1rem', color: 'rgba(255,255,255,0.95)', 
+              padding: '0.8rem', background: 'rgba(255,255,255,0.03)', 
+              borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)',
+              textAlign: 'center'
+            }}>
+              <span style={{ fontWeight: 900, color: '#00D4FF', marginRight: '8px' }}>🕐 주요 운항시각</span>
+              {schedules.slice(0, 2).map((s:any, i:number) => (
+                <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', marginRight: '10px' }}>
+                  <b style={{ fontSize: '1.1rem' }}>{formatTime(s.sail_tm)}</b>
+                  <small style={{ opacity: 0.6, fontSize: '0.75rem' }}>({s.dest_nm})</small>
+                  {i < Math.min(schedules.length, 2) - 1 && <span style={{ opacity: 0.2, marginLeft: '8px' }}>|</span>}
+                </span>
+              ))}
+            </div>
+          )}
+
+          {statusInfo.reason && (
+            <p style={{ color: '#ff4d4d', fontWeight: 800, fontSize: '0.85rem', textAlign: 'center', margin: '4px 0', border: '1px dashed rgba(255,77,77,0.3)', padding: '4px', borderRadius: '8px' }}>
+              ⚠️ 사유: {statusInfo.reason}
+            </p>
+          )}
+
+          {/* 밴드 이동 (공간 최소화) */}
+          <div style={{ marginTop: '0.2rem' }}>
+             <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem', marginBottom: '0.4rem', textAlign: 'center' }}>
+                ※ 전체 선박 운항상태 알림 (밴드)
+             </p>
+             <BandStatusButton shipId={ship.id} />
           </div>
-        )}
-
-        {statusInfo.reason && (
-          <p className={styles.statusDesc} style={{ color: '#ff4d4d', fontWeight: 800, marginTop: '1rem', border: '2px dashed #ff4d4d', padding: '0.5rem', borderRadius: '8px' }}>
-            사유: {statusInfo.reason}
-          </p>
-        )}
-
-        <div style={{ marginTop: '1.2rem' }}>
-           <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', marginBottom: '0.8rem', textAlign: 'center' }}>
-              ※ 전체 선박 운항 여부 · 실시간 변동 알림은 밴드에서 확인
-           </p>
-           <BandStatusButton shipId={ship.id} />
         </div>
       </div>
 
