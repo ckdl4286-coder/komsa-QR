@@ -37,24 +37,41 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
     <div className={styles.container}>
       <Tracker shipId={ship.id} />
       
-      <header className={styles.header}>
-        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '15px' }}>
+      <header className={styles.header} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+        {/* 🏛️ 최상단: 공단 공식 로고 (가장 크게!) */}
+        <div style={{ marginBottom: '1.2rem', filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.3))' }}>
+          <img
+            src="/komsa_official_logo.png"
+            alt="한국해양교통안전공단 공식 로고"
+            style={{ width: '220px', height: 'auto', display: 'block', margin: '0 auto' }}
+          />
+        </div>
+        
+        {/* ⚓ 중단: 목포운항관리센터 명칭 (그다음 크기로) */}
+        <div style={{ marginBottom: '1.5rem' }}>
+          <div style={{ fontSize: '1.4rem', color: '#fff', fontWeight: 900, letterSpacing: '-0.5px', textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}>
+             목포운항관리센터
+          </div>
+          <div style={{ marginTop: '0.4rem', fontSize: '0.8rem', color: '#00d4ff', fontWeight: 800, letterSpacing: '1px' }}>
+             MOKPO MARITIME SAFETY STATION
+          </div>
+        </div>
+
+        {/* 🦦 하단: 해수호 캐릭터 (이들보다 작게!) */}
+        <div style={{ position: 'relative', display: 'inline-block', marginBottom: '1rem' }}>
           <img
             src="/haesooho_hello.jpg"
             alt="해수호 캐릭터"
             style={{
-              width: '85px', height: '85px', objectFit: 'cover',
+              width: '70px', height: '70px', objectFit: 'cover',
               borderRadius: '50%', border: '4px solid rgba(255,255,255,0.3)',
               background: 'rgba(255,255,255,0.2)',
               boxShadow: '0 8px 25px rgba(0,0,0,0.3)'
             }}
           />
-          <div style={{ textAlign: 'left' }}>
-             <div style={{ fontSize: '0.8rem', color: '#00d4ff', fontWeight: 900, marginBottom: '2px' }}>한국해양교통안전공단</div>
-             <div style={{ fontSize: '1.2rem', color: '#fff', fontWeight: 800 }}>목포운항관리센터</div>
-          </div>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginTop: '1.5rem', marginBottom: '0.2rem' }}>
+
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginBottom: '0.2rem' }}>
           <h1 className={styles.shipName} style={{ fontSize: '2.4rem', marginBottom: 0 }}>{ship.name}</h1>
           <FavoriteButton shipId={ship.id} />
         </div>
@@ -211,9 +228,9 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
       </section>
 
       <footer style={{ textAlign: 'center', marginTop: '4rem', paddingBottom: '3rem', fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2.5rem' }}>
-         <p style={{ fontWeight: 700, color: 'rgba(255,255,255,0.6)', marginBottom: '1rem' }}>한국해양교통안전공단 목포운항관리센터</p>
-         <p>© 2026 KOMSA MOKPO STATION. ALL RIGHTS RESERVED.</p>
-         <p style={{ marginTop: '8px', letterSpacing: '0.5px', color: '#00d4ff' }}>세상에서 가장 안전한 바닷길을 만듭니다.</p>
+         <p style={{ fontWeight: 800, color: 'rgba(255,255,255,0.6)', marginBottom: '1rem', fontSize: '0.95rem' }}>한국해양교통안전공단 목포운항관리센터</p>
+         <p>© {new Date().getFullYear()} MOPO MARITIME SAFETY. 본 관리 시스템의 모든 권리는 공단에 있습니다.</p>
+         <p style={{ marginTop: '10px', letterSpacing: '0.5px', color: '#00d4ff', fontWeight: 600 }}>세상에서 가장 안전한 바닷길을 만듭니다.</p>
       </footer>
     </div>
   );
