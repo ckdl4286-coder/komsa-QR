@@ -180,6 +180,7 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           {ship.links
             .filter((link: any) => {
+              if (link.url === 'tracking-only') return false;
               const title = link.title || '';
               // 핵심 안전 정보 섹션에서 이미 다루는 항목과 유선문의 필터링
               const isCommonLink = ['운항관리규정', '안전정보', '점검표', '유선문의'].some(k => title.includes(k));
@@ -190,22 +191,22 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
               let guideText = '바로가기';
               let icon = link.icon || 'ExternalLink';
               let myUrl = link.url;
-              let displayTitle = link.title;
+              let displayTitle = link.title || '';
 
               // 프리미엄 UI 및 문구 오버라이드
-              if (title.includes('PATIS') || title.includes('위치')) {
+              if (displayTitle.includes('PATIS') || displayTitle.includes('위치')) {
                  desc = '공식 앱을 설치하고 전국 모든 여객선의 실시간 위치와 정보를 손쉽게 확인하세요.';
                  guideText = '앱 설치';
                  icon = 'MapPin';
                  displayTitle = "실시간 선박 위치 (MTIS 앱)";
                  myUrl = "https://play.google.com/store/apps/details?id=kr.or.komsa.mtis&pcampaignid=web_share";
               } 
-              else if (title.includes('VR')) {
+              else if (displayTitle.includes('VR')) {
                  desc = '가상현실로 체험하는 여객선 안전 교육 콘텐츠를 시청하세요.';
                  guideText = '체험하기';
                  icon = 'Zap';
               }
-              else if (title.includes('전기차')) {
+              else if (displayTitle.includes('전기차')) {
                  desc = '사전 예약을 통해 출항 전 전기차 배터리 안심 점검서비스를 무상으로 받아보세요.';
                  guideText = '안심 예약';
                  icon = 'ShieldCheck';
