@@ -188,6 +188,9 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
                !link.title.includes('밴드') &&
                !link.title.includes('VR') &&
                !link.title.includes('어때') &&
+               !link.title.includes('운항관리규정') &&
+               !link.title.includes('안전정보') &&
+               !link.title.includes('점검표') &&
                !link.url.includes('band.us') &&
                !link.url.includes('komsa.or.kr/viewer') &&
                !link.url.includes('docs.google.com/forms') 
