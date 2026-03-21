@@ -138,6 +138,50 @@
 .modalActions { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 .confirmBtn { background: #ef4444; color: white; padding: 0.85rem; border: none; border-radius: 12px; font-weight: 800; cursor: pointer; transition: 0.2s; }
 .confirmBtn:hover { background: #dc2626; transform: translateY(-2px); }
+
+/* 🖋️ 인라인 편집 스타일 */
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.editInput {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  width: 100%;
+  color: #1e293b;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.editInput:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+}
+
+.editInline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.editSave {
+  background: #10b981;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
 .cancelBtn { background: #f1f5f9; color: #475569; padding: 0.85rem; border: none; border-radius: 12px; font-weight: 700; cursor: pointer; }
 .cancelBtn:hover { background: #e2e8f0; }
 

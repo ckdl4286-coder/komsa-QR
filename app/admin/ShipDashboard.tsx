@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import styles from './admin.module.css';
-import { Copy, Link as LinkIcon, BarChart2, Edit2, Trash2, Calendar, User, Users, CalendarDays, Settings, Star, ExternalLink, Activity, Target, PlusCircle, Ship as ShipIcon, ChevronRight, Heart, AlertCircle, RotateCcw } from 'lucide-react';
+import { 
+  Copy, Link as LinkIcon, BarChart2, Edit2, Trash2, Calendar, User, Users, 
+  CalendarDays, Settings, Star, ExternalLink, Activity, Target, PlusCircle, 
+  Ship as ShipIcon, ChevronRight, Heart, AlertCircle, RotateCcw, CheckCircle 
+} from 'lucide-react';
 import { updateCoreLink, updateWeather, deleteCustomLink, addCustomLink, updateCustomLink } from './actions';
 
 export default function ShipDashboard({ ship, config, overallStats, urlOrigin, isGlobal = false }: any) {
@@ -171,71 +175,101 @@ export default function ShipDashboard({ ship, config, overallStats, urlOrigin, i
             }}><PlusCircle size={16}/> 추가</button>
           </div>
 
-          {ship.links?.filter((l:any)=>l.url!=='tracking-only').map((l:any) => (
-             <div className={styles.linkCard} key={l.id}>
-               <div className={styles.linkLeft}>
-                  <div className={`${styles.linkIconBox} ${styles.pink}`}><ExternalLink size={24} /></div>
-                  <div className={styles.linkInfo}>
-                    <h4>{l.title}</h4>
-                    <p>{l.url}</p>
-                    <div className={styles.badges}>
-                      <span className={`${styles.badge} ${styles.extra}`}>추가</span>
-                      <span className={`${styles.badge} ${styles.active}`}>활성</span>
-                    </div>
-                  </div>
-               </div>
-               <div className={styles.actions} style={{ display: 'flex', gap: '0.6rem', padding: '0.4rem 0' }}>
-                  <button 
-                    className={styles.actionBtn} 
-                     onClick={async () => {
-                        const input = prompt('제목과 주소를 [제목@주소] 형식으로 입력하세요.\n예시: 안전정보@https://naver.com', `${l.title}@${l.url}`);
-                        if (input && input.includes('@')) {
-                           const [newTitle, newUrl] = input.split('@');
-                           try {
-                              if (!newTitle || !newUrl) throw new Error('입력 형식이 잘못되었습니다.');
-                              console.log('Update starting...', { newTitle, newUrl });
-                              await updateCustomLink(l.id, newTitle, newUrl);
-                              alert('수정 완료!');
-                              window.location.reload();
-                           } catch (err) {
-                              alert('수정 중 서버 에러 발생: ' + (err as Error).message);
-                              console.error(err);
-                           }
-                        } else if (input) {
-                           alert('입력 시 중간에 @ 문자를 넣어주세요!');
-                        }
-                     }} 
-                    style={{ 
-                      color: '#0ea5e9', 
-                      backgroundColor: 'rgba(14, 165, 233, 0.1)', 
-                      border: '1px solid rgba(14, 165, 233, 0.4)',
-                      padding: '0.5rem 1rem',
-                      borderRadius: '10px',
-                      fontWeight: 800,
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '4px'
-                    }}
-                  >
-                    <Edit2 size={14}/> 수정
-                  </button>
-                  <button 
-                    className={`${styles.actionBtn} ${styles.danger}`} 
-                    onClick={()=>setDeleteConfirmLink(l)}
-                    style={{ 
-                      padding: '0.5rem 1rem', 
-                      borderRadius: '10px',
-                      fontWeight: 800,
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '4px'
-                    }}
-                  >
-                    <Trash2 size={14}/> 삭제
-                  </button>
-               </div>
-             </div>
-          ))}
+          {ship.links?.filter((l:any)=>l.url!=='tracking-only').map((l:any) => {
+            const isEditing = editing === l.id;
+            return (
+              <div className={styles.linkCard} key={l.id}>
+                <div className={styles.linkLeft}>
+                   <div className={`${styles.linkIconBox} ${styles.pink}`}><ExternalLink size={24} /></div>
+                   <div className={styles.linkInfo}>
+                     {isEditing ? (
+                       <div className={styles.editForm}>
+                         <input 
+                           className={styles.editInput} 
+                           defaultValue={l.title} 
+                           id={`title-${l.id}`} 
+                           autoFocus 
+                         />
+                         <input 
+                           className={styles.editInput} 
+                           defaultValue={l.url} 
+                           id={`url-${l.id}`} 
+                         />
+                       </div>
+                     ) : (
+                       <>
+                         <h4>{l.title}</h4>
+                         <p>{l.url}</p>
+                       </>
+                     )}
+                     <div className={styles.badges}>
+                       <span className={`${styles.badge} ${styles.extra}`}>추가</span>
+                       <span className={`${styles.badge} ${styles.active}`}>활성</span>
+                     </div>
+                   </div>
+                </div>
+                <div className={styles.actions} style={{ display: 'flex', gap: '0.4rem', marginTop: '0.5rem' }}>
+                   {isEditing ? (
+                     <>
+                        <button 
+                          className={styles.actionBtn} 
+                          style={{ backgroundColor: '#10b981', color: '#fff', border: 'none' }}
+                          onClick={async () => {
+                             const newTitle = (document.getElementById(`title-${l.id}`) as HTMLInputElement).value;
+                             const newUrl = (document.getElementById(`url-${l.id}`) as HTMLInputElement).value;
+                             if (newTitle && newUrl) {
+                                try {
+                                   await updateCustomLink(l.id, newTitle, newUrl);
+                                   setEditing(null);
+                                   window.location.reload();
+                                } catch (err) {
+                                   alert('저장 실패: ' + (err as Error).message);
+                                }
+                             }
+                          }}
+                        >
+                          <CheckCircle size={14}/> 저장
+                        </button>
+                        <button 
+                          className={styles.actionBtn} 
+                          onClick={() => setEditing(null)}
+                        >
+                          <RotateCcw size={14}/> 취소
+                        </button>
+                     </>
+                   ) : (
+                     <>
+                        <button 
+                          className={styles.actionBtn} 
+                          onClick={() => setEditing(l.id)} 
+                          style={{ 
+                            color: '#0ea5e9', 
+                            backgroundColor: 'rgba(14, 165, 233, 0.1)', 
+                            border: '1px solid rgba(14, 165, 233, 0.4)',
+                            padding: '0.5rem 1rem',
+                            borderRadius: '10px',
+                            fontWeight: 800
+                          }}
+                        >
+                          <Edit2 size={14}/> 수정
+                        </button>
+                        <button 
+                          className={`${styles.actionBtn} ${styles.danger}`} 
+                          onClick={()=>setDeleteConfirmLink(l)}
+                          style={{ 
+                            padding: '0.5rem 1rem', 
+                            borderRadius: '10px',
+                            fontWeight: 800
+                          }}
+                        >
+                          <Trash2 size={14}/> 삭제
+                        </button>
+                     </>
+                   )}
+                </div>
+              </div>
+            );
+          })}
 
           {/* Link Deletion Modal */}
           {deleteConfirmLink && (
