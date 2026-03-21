@@ -181,10 +181,10 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
           <ActionButton 
             shipId={ship.id} 
             linkId="service_patis" 
-            url="https://mtis.komsa.or.kr/viewer/m" 
-            title="선박 실시간 위치 및 정보" 
-            description="전국 여객선의 현재 위치와 항로 정보를 PATIS로 확인하세요!"
-            guideText="지도 보기"
+            url="https://play.google.com/store/apps/details?id=kr.or.komsa.mtis&pcampaignid=web_share" 
+            title="실시간 선박 위치 (MTIS 앱)" 
+            description="공식 앱을 설치하고 전국 모든 여객선의 실시간 위치와 정보를 손쉽게 확인하세요."
+            guideText="앱 설치"
             iconName="MapPin" 
           />
           <ActionButton 
