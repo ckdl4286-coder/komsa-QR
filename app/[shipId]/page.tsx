@@ -47,42 +47,20 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
       
       <header className={styles.header} style={{ 
         display: 'flex', flexDirection: 'column', alignItems: 'center', 
-        paddingTop: '0.8rem', paddingBottom: '0.8rem', gap: '0.5rem' 
+        paddingTop: '0.5rem', paddingBottom: '0.2rem', gap: '0.2rem' 
       }}>
-        {/* 🏛️ 최상단: 공단 로고 + 해수호 + 센터 명칭 (가로 배치로 컴팩트하게!) */}
-        <div style={{ 
-          display: 'flex', alignItems: 'center', justifyContent: 'center', 
-          gap: '12px', flexWrap: 'wrap', width: '100%' 
-        }}>
-          {/* 1. 공단 공식 로고 (높이 축소) */}
+        {/* 🏛️ 최상단: 공단 공식 로고만 깔끔하게 하나! (높이 최소화) */}
+        <div style={{ marginBottom: '0.3rem' }}>
           <img
             src="/komsa_official_logo.png"
             alt="공단 로고"
-            style={{ width: '140px', height: 'auto', filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.2))' }}
+            style={{ width: '130px', height: 'auto', filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.15))' }}
           />
-          
-          {/* 2. 해수호 (로고보다 작게, 포인트 마스코트) */}
-          <img
-            src="/haesooho_hello.jpg"
-            alt="해수호"
-            style={{
-              width: '45px', height: '45px', objectFit: 'cover',
-              borderRadius: '50%', border: '2px solid rgba(255,255,255,0.4)',
-              boxShadow: '0 4px 12px rgba(0,0,0,0.2)'
-            }}
-          />
-
-          {/* 3. 목포운항관리센터 (영문 제거하여 더 깔끔하게!) */}
-          <div style={{ textAlign: 'left', lineHeight: '1.1' }}>
-            <div style={{ fontSize: '1.2rem', color: '#fff', fontWeight: 900, textShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
-               목포운항관리센터
-            </div>
-          </div>
         </div>
 
-        {/* 🚢 선박 이름 (상태창과 더 밀착) */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginTop: '0.3rem' }}>
-          <h1 className={styles.shipName} style={{ fontSize: '2.1rem', marginBottom: 0 }}>{ship.name}</h1>
+        {/* 🚢 선박 이름 (상단으로 더 밀착) */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+          <h1 className={styles.shipName} style={{ fontSize: '2.0rem', marginBottom: 0 }}>{ship.name}</h1>
           <FavoriteButton shipId={ship.id} />
         </div>
       </header>
