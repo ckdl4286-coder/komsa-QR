@@ -200,10 +200,9 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
             shipId={ship.id} 
             linkId="service_ev" 
             url="https://docs.google.com/forms/d/e/1FAIpQLSfcl6G0YvPZq3i7mXclG0n_p2mYp6F7_k6kX..." 
-            title="전기차 배터리 점검 서비스" 
-            description="사전 예약을 통해 출항 전 전기차 배터리 안심 점검을 받아보세요."
-            guideText="예약하기"
-            isFree={true}
+            title="전기차 배터리 안심 점검 서비스" 
+            description="사전 예약을 통해 출항 전 전기차 배터리 안심 점검서비스를 무상으로 받아보세요."
+            guideText="안심 예약"
             iconName="ShieldCheck" 
           />
         </div>
