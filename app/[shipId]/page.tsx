@@ -29,7 +29,7 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
   const dd = String(today.getDate()).padStart(2, '0');
   const dayOfWeek = today.getDay(); // 0: 일, 6: 토
   const dayName = today.toLocaleDateString('ko-KR', { weekday: 'short' });
-  const dayColor = dayOfWeek === 0 ? '#ff5252' : (dayOfWeek === 6 ? '#52a2ff' : '#fff');
+  const dayColor = dayOfWeek === 0 ? '#ef4444' : (dayOfWeek === 6 ? '#3b82f6' : '#475569');
   
   const displayDate = (
     <>
@@ -54,41 +54,41 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
       
       <header className={styles.header} style={{ 
         display: 'flex', flexDirection: 'column', alignItems: 'center', 
-        paddingTop: '1.2rem', paddingBottom: '0.4rem', gap: '0.4rem' 
+        paddingTop: '1rem', paddingBottom: '0.5rem', gap: '0.4rem' 
       }}>
-        {/* 🏛️ 최상단: 공단 공식 로고만 깔끔하게 하나! (높이 최소화) */}
+        {/* 🏛️ 최상단: 공단 공식 로고 */}
         <div style={{ marginBottom: '0.4rem' }}>
           <img
             src="/komsa_official_logo.png"
             alt="공단 로고"
-            style={{ width: '135px', height: 'auto', filter: 'drop-shadow(0 6px 10px rgba(0,0,0,0.2))' }}
+            style={{ width: '135px', height: 'auto' }}
           />
         </div>
 
-        {/* 🚢 선박 이름 (상단으로 더 밀착) */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
-          <h1 className={styles.shipName} style={{ fontSize: '2.1rem', marginBottom: 0, letterSpacing: '-0.5px' }}>{ship.name}</h1>
+        {/* 🚢 선박 이름 */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+          <h1 className={styles.shipName} style={{ fontSize: '2.1rem', marginBottom: 0, letterSpacing: '-1.2px' }}>{ship.name}</h1>
           <FavoriteButton shipId={ship.id} />
         </div>
       </header>
 
-      <div className={styles.statusBox} style={{ padding: '0.8rem 1rem', marginBottom: '1.2rem' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', marginBottom: '6px', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '4px' }}>
-            <span style={{ fontSize: '0.75rem', color: '#00d4ff', fontWeight: 900, textShadow: '0 0 10px rgba(0,212,255,0.3)' }}>
+      <div className={styles.statusBox} style={{ padding: '1rem', marginBottom: '1.2rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', marginBottom: '4px', borderBottom: '1px solid #f1f5f9', paddingBottom: '6px' }}>
+            <span style={{ fontSize: '0.78rem', color: '#238299', fontWeight: 900 }}>
                ● 실시간 연동 중 
             </span>
-            <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.6)', fontWeight: 700 }}>
+            <span style={{ fontSize: '0.72rem', color: '#94a3b8', fontWeight: 700 }}>
                방금 업데이트됨
             </span>
           </div>
           
-          {/* 📅 날짜와 🚢 상태를 한 줄로 결합! */}
+          {/* 📅 날짜와 🚢 상태 */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', flexWrap: 'nowrap', width: '100%' }}>
             <div style={{ 
-              fontSize: '1rem', color: '#fff', fontWeight: 900, 
-              letterSpacing: '-0.5px', background: 'rgba(255,255,255,0.05)',
-              padding: '6px 12px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)',
+              fontSize: '1rem', color: '#334155', fontWeight: 900, 
+              letterSpacing: '-0.5px', background: '#f8fafc',
+              padding: '8px 14px', borderRadius: '15px', border: '1px solid #e2e8f0',
               display: 'flex', alignItems: 'center', gap: '6px'
             }}>
               📅 {displayDate}
@@ -96,36 +96,35 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
             
             <div className="glowing" style={{ 
               background: statusInfo.color, color: '#fff', 
-              padding: '6px 16px', borderRadius: '12px', fontWeight: 900, 
-              fontSize: '1.2rem', boxShadow: '0 4px 15px rgba(0,0,0,0.3)',
-              display: 'flex', alignItems: 'center', gap: '6px',
-              textShadow: '0 1px 2px rgba(0,0,0,0.2)'
+              padding: '8px 18px', borderRadius: '15px', fontWeight: 900, 
+              fontSize: '1.15rem', boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+              display: 'flex', alignItems: 'center', gap: '6px'
             }}>
               {statusInfo.emoji} {statusInfo.label}
             </div>
           </div>
 
-          {/* 🕐 운항 정보 리스트 - 세로형 복구 (가독성 증대) */}
+          {/* 🕐 운항 정보 리스트 */}
           {schedules && schedules.length > 0 && (
-            <div style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.85)', marginTop: '0.5rem', padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)' }}>
+            <div style={{ fontSize: '0.9rem', color: '#475569', marginTop: '0.5rem', padding: '1.1rem', background: '#f8fafc', borderRadius: '20px', border: '1px solid #f1f5f9' }}>
                {schedules.slice(0, 3).map((s:any, i:number) => {
                  const statusTxt = s.sail_st || '정상';
                  const isCancel = statusTxt.includes('통제') || statusTxt.includes('결항');
-                 const statusColor = isCancel ? '#ff5252' : '#52ff82';
+                 const statusColor = isCancel ? '#ef4444' : '#10b981';
                  
                  return (
-                   <div key={i} style={{ display: 'flex', gap: '0.6rem', alignItems: 'center', justifyContent: 'center', marginBottom: '0.6rem' }}>
-                     <span style={{ fontWeight: 900, fontSize: '0.95rem', color: '#fff' }}>🕐 {formatTime(s.sail_tm)}</span>
+                   <div key={i} style={{ display: 'flex', gap: '0.8rem', alignItems: 'center', justifyContent: 'center', marginBottom: '0.6rem' }}>
+                     <span style={{ fontWeight: 900, fontSize: '1rem', color: '#1e293b' }}>🕐 {formatTime(s.sail_tm)}</span>
                      <span 
                        style={{ 
-                         fontSize: '0.7rem', fontWeight: 900, padding: '2px 8px', borderRadius: '4px', 
-                         background: `${statusColor}22`, border: `1px solid ${statusColor}55`, color: statusColor 
+                         fontSize: '0.72rem', fontWeight: 900, padding: '3px 10px', borderRadius: '6px', 
+                         background: `${statusColor}11`, border: `1px solid ${statusColor}44`, color: statusColor 
                        }}
                      >
                        {statusTxt}
                      </span>
-                     <span style={{ opacity: 0.2 }}>|</span>
-                     <span style={{ fontWeight: 500, fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)' }}>{s.oport_nm} ➔ {s.dest_nm}</span>
+                     <span style={{ opacity: 0.1 }}>|</span>
+                     <span style={{ fontWeight: 600, fontSize: '0.88rem', color: '#64748b' }}>{s.oport_nm} ➔ {s.dest_nm}</span>
                    </div>
                  );
                })}
@@ -133,14 +132,14 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
           )}
 
           {statusInfo.reason && (
-            <p style={{ color: '#ff4d4d', fontWeight: 800, fontSize: '0.85rem', textAlign: 'center', margin: '4px 0', border: '1px dashed rgba(255,77,77,0.3)', padding: '4px', borderRadius: '8px' }}>
+            <p style={{ color: '#ef4444', fontWeight: 800, fontSize: '0.85rem', textAlign: 'center', margin: '6px 0', border: '1px dashed #fee2e2', padding: '6px', borderRadius: '12px', background: '#fff5f5' }}>
               ⚠️ 사유: {statusInfo.reason}
             </p>
           )}
 
-          {/* 밴드 이동 (공간 최소화) */}
+          {/* 밴드 이동 */}
           <div style={{ marginTop: '0.2rem' }}>
-             <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem', marginBottom: '0.4rem', textAlign: 'center' }}>
+             <p style={{ color: '#94a3b8', fontSize: '0.78rem', marginBottom: '0.6rem', textAlign: 'center', fontWeight: 600 }}>
                 ※ 전체 선박 운항상태 알림 (밴드)
              </p>
              <BandStatusButton shipId={ship.id} />
@@ -161,7 +160,7 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
             title="출항 전 점검표 확인" 
             description="우리 배가 안전하게 점검되었는지 최신 점검표를 직접 확인해보세요!"
             guideText="점검표 보기"
-            iconName="CheckSquare" 
+            iconName="ClipboardCheck" 
             primary={true} 
           />
           <ActionButton 
@@ -171,7 +170,7 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
             title="운항관리규정 열람" 
             description="선박 통제 규정, 차량 적재 및 허용 기준 등을 확인할 수 있습니다."
             guideText="규정 보기"
-            iconName="Navigation" 
+            iconName="BookOpen" 
             primary={false} 
           />
           <ActionButton 
@@ -181,7 +180,7 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
             title="여객선 안전정보 조회" 
             description="선박 검사 이력과 사고 현황 등 안전 핵심 정보를 투명하게 공개합니다."
             guideText="정보 보기"
-            iconName="ShieldAlert" 
+            iconName="Info" 
             primary={false} 
           />
         </div>
@@ -233,12 +232,12 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
               else if (displayTitle.includes('VR')) {
                  desc = '가상현실로 체험하는 여객선 안전 교육 콘텐츠를 시청하세요.';
                  guideText = '체험하기';
-                 icon = 'Zap';
+                 icon = 'Glasses';
               }
               else if (displayTitle.includes('전기차')) {
                  desc = '사전 예약을 통해 출항 전 전기차 배터리 안심 점검서비스를 무상으로 받아보세요.';
                  guideText = '안심 예약';
-                 icon = 'ShieldCheck';
+                 icon = 'BatteryCharging';
                  displayTitle = "전기차 배터리 안심 점검 서비스";
               }
 
@@ -258,20 +257,20 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
         </div>
       </section>
 
-      <footer style={{ textAlign: 'center', marginTop: '4rem', paddingBottom: '3.5rem', fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2.5rem' }}>
-         <div style={{ marginBottom: '1.2rem', padding: '0.6rem 1rem', background: 'rgba(255,255,255,0.03)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)', display: 'inline-block' }}>
-           <span style={{ color: 'rgba(255,255,255,0.5)', marginRight: '8px', fontWeight: 500 }}>여객선 안전정보 문의</span>
+      <footer style={{ textAlign: 'center', marginTop: '4rem', paddingBottom: '3.5rem', fontSize: '0.8rem', color: '#64748b', borderTop: '1px solid #e2e8f0', paddingTop: '2.5rem' }}>
+         <div style={{ marginBottom: '1.2rem', padding: '0.8rem 1.2rem', background: '#ffffff', borderRadius: '15px', border: '1px solid #cbd5e1', display: 'inline-block', boxShadow: '0 4px 10px rgba(0,0,0,0.03)' }}>
+           <span style={{ color: '#475569', marginRight: '10px', fontWeight: 600 }}>여객선 안전정보 센터</span>
            <a 
              href="tel:0507-1352-9457" 
-             style={{ fontSize: '1.1rem', color: '#00d4ff', fontWeight: 800, textDecoration: 'none' }}
+             style={{ fontSize: '1.15rem', color: '#0369a1', fontWeight: 900, textDecoration: 'none' }}
            >
-             0507-1352-9457
+             📞 0507-1352-9457
            </a>
          </div>
          
-         <p style={{ fontWeight: 800, color: 'rgba(255,255,255,0.6)', marginBottom: '1rem', fontSize: '0.9rem' }}>한국해양교통안전공단 목포운항관리센터</p>
-         <p>© {new Date().getFullYear()} MOPO MARITIME SAFETY. 본 관리 시스템의 모든 권리는 공단에 있습니다.</p>
-         <p style={{ marginTop: '10px', letterSpacing: '0.5px', color: '#00d4ff', fontWeight: 600, fontSize: '0.8rem' }}>세상에서 가장 안전한 바닷길을 만듭니다.</p>
+         <p style={{ fontWeight: 850, color: '#334155', marginBottom: '0.8rem', fontSize: '0.95rem' }}>한국해양교통안전공단 목포운항관리센터</p>
+         <p style={{ color: '#94a3b8', fontSize: '0.75rem' }}>© {new Date().getFullYear()} MOKPO MARITIME SAFETY. 본 관리 시스템의 모든 권리는 공단에 있습니다.</p>
+         <p style={{ marginTop: '12px', letterSpacing: '0.5px', color: '#0284c7', fontWeight: 700, fontSize: '0.85rem' }}>🌊 세상에서 가장 안전한 바닷길을 만듭니다.</p>
       </footer>
     </div>
   );

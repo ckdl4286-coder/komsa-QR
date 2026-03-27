@@ -2,7 +2,7 @@
 // Vercel Deploy Trigger [2026.03.21.1330]
 
 import React, { useEffect, useState } from 'react';
-import { ExternalLink, Navigation, Info, Zap, Bus, CalendarClock, ChevronRight, CheckSquare, Anchor, Heart } from 'lucide-react';
+import { Anchor, BatteryCharging, BookOpen, Bus, CalendarClock, CheckSquare, ChevronRight, ClipboardCheck, ExternalLink, Glasses, Heart, Info, MapPin, Navigation, Zap } from 'lucide-react';
 import styles from './page.module.css';
 
 export function Tracker({ shipId }: { shipId: string }) {
@@ -57,27 +57,26 @@ export function FavoriteButton({ shipId, shipName }: { shipId: string; shipName?
       <button 
         onClick={toggleFavorite}
         style={{
-          background: 'rgba(255, 255, 255, 0.12)',
-          border: '1px solid rgba(255, 255, 255, 0.25)',
+          background: '#ffffff',
+          border: '1px solid #e2e8f0',
           borderRadius: '50%',
-          width: '42px',
-          height: '42px',
+          width: '44px',
+          height: '44px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           cursor: 'pointer',
           transition: 'all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
-          backdropFilter: 'blur(10px)',
-          color: isFavorite ? '#ff4d4d' : '#fff',
-          boxShadow: isFavorite ? '0 0 20px rgba(255, 77, 77, 0.6)' : 'none',
+          color: isFavorite ? '#ef4444' : '#64748b',
+          boxShadow: isFavorite ? '0 4px 15px rgba(239, 68, 68, 0.25)' : '0 4px 10px rgba(0,0,0,0.03)',
           flexShrink: 0
         }}
       >
         <Heart 
-          fill={isFavorite ? '#ff4d4d' : 'none'} 
+          fill={isFavorite ? '#ef4444' : 'none'} 
           size={22} 
           strokeWidth={isFavorite ? 0.5 : 2.5} 
-          style={{ filter: isFavorite ? 'drop-shadow(0 0 5px rgba(255, 77, 77, 0.8))' : 'none' }}
+          style={{ filter: isFavorite ? 'drop-shadow(0 2px 4px rgba(239, 68, 68, 0.4))' : 'none' }}
         />
       </button>
 
@@ -189,11 +188,15 @@ export function ActionButton({
   };
 
   const getIcon = () => {
-    if(iconName === 'CheckSquare') return <CheckSquare size={22} />;
-    if(iconName === 'Navigation') return <Navigation size={22} />;
-    if(iconName === 'Anchor') return <Anchor size={22} />;
-    if(iconName === 'ExternalLink') return <ExternalLink size={20} />;
-    return <ChevronRight size={20} />;
+    if(iconName === 'ClipboardCheck') return <ClipboardCheck size={28} strokeWidth={2.5} />;
+    if(iconName === 'BookOpen') return <BookOpen size={28} strokeWidth={2.5} />;
+    if(iconName === 'Info') return <Info size={28} strokeWidth={2.5} />;
+    if(iconName === 'BatteryCharging') return <BatteryCharging size={28} strokeWidth={2.5} />;
+    if(iconName === 'Glasses') return <Glasses size={28} strokeWidth={2.5} />;
+    if(iconName === 'MapPin') return <MapPin size={28} strokeWidth={2.5} />;
+    if(iconName === 'Anchor') return <Anchor size={28} strokeWidth={2.5} />;
+    if(iconName === 'ExternalLink') return <ExternalLink size={26} strokeWidth={2.5} />;
+    return <ChevronRight size={26} strokeWidth={2.5} />;
   };
 
   return (
@@ -204,31 +207,41 @@ export function ActionButton({
         rel="noopener noreferrer" 
         onClick={handleClick}
         className={`${styles.actionItem} ${primary ? styles.actionItemPrimary : ''}`}
-        style={{ flexDirection: 'column', alignItems: 'flex-start', padding: description ? '1.4rem' : '1.1rem 1.25rem' }}
+        style={{ padding: description ? '1.4rem' : '1.2rem 1.4rem', textDecoration: 'none' }}
       >
-        <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center', marginBottom: description ? '0.6rem' : '0' }}>
-          <div className={styles.actionItemLeft}>
-            <div className={styles.iconBox}>
-              {getIcon()}
-            </div>
-            <span className={styles.actionTitle}>{title}</span>
+        <div style={{ display: 'flex', gap: '1.25rem', alignItems: 'flex-start', width: '100%', position: 'relative' }}>
+          {/* 🌟 명시적 아이콘 영역 (고정 크기) */}
+          <div className={styles.iconBox}>
+            {getIcon()}
           </div>
-          {guideText && (
-            <span className={styles.actionGuide}>
-              {guideText} <ChevronRight size={14} />
-            </span>
-          )}
+          
+          {/* 📝 텍스트 + 우측 컨테이너 (정렬 유지) */}
+          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '56px', gap: '5px', minWidth: 0 }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <span className={styles.actionTitle} style={{ lineHeight: 1.2 }}>{title}</span>
+              {guideText && (
+                <span className={styles.actionGuide}>
+                  {guideText} <ChevronRight size={14} strokeWidth={3} />
+                </span>
+              )}
+            </div>
+            
+            {description && (
+              <span className={styles.actionDesc}>
+                {description}
+              </span>
+            )}
+            
+            {isFree && (
+              <span className={styles.freeBadge} style={{ alignSelf: 'flex-start' }}>무료</span>
+            )}
+            
+            {/* 우측 네비게이션 화살표 */}
+            {!guideText && !description && (
+              <ChevronRight size={18} style={{ position: 'absolute', right: '0rem', top: '50%', transform: 'translateY(-50%)', opacity: 0.3, color: '#1e293b' }} />
+            )}
+          </div>
         </div>
-        
-        {description && (
-          <span className={styles.actionDesc}>
-            {description}
-          </span>
-        )}
-        {isFree && (
-          <span className={styles.freeBadge}>무료</span>
-        )}
-        {!guideText && !description && <ChevronRight size={18} style={{ position: 'absolute', right: '1.25rem', opacity: 0.5, color: '#fff' }} />}
       </a>
 
       {showPopup && (
