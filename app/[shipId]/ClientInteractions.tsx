@@ -207,7 +207,7 @@ export function ActionButton({
         rel="noopener noreferrer" 
         onClick={handleClick}
         className={`${styles.actionItem} ${primary ? styles.actionItemPrimary : ''}`}
-        style={{ padding: description ? '1.4rem' : '1.2rem 1.4rem', textDecoration: 'none' }}
+        style={{ padding: description ? 'clamp(1rem, 4vw, 1.4rem)' : 'clamp(1rem, 3.5vw, 1.2rem) clamp(1rem, 4vw, 1.4rem)', textDecoration: 'none' }}
       >
         <div style={{ display: 'flex', gap: '1.25rem', alignItems: 'flex-start', width: '100%', position: 'relative' }}>
           {/* 🌟 명시적 아이콘 영역 (고정 크기) */}

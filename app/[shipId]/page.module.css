@@ -1,5 +1,5 @@
 .container {
-  padding: 1.2rem;
+  padding: clamp(0.6rem, 2.5vw, 1.2rem);
   padding-bottom: 5rem;
   max-width: 500px;
   margin: 0 auto;
@@ -64,7 +64,7 @@
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 28px;
-  padding: 1rem;
+  padding: clamp(0.8rem, 3vw, 1rem);
   box-shadow: 
     0 10px 25px rgba(0, 0, 0, 0.05),
     0 4px 10px rgba(0, 0, 0, 0.02);
@@ -120,11 +120,16 @@
 }
 
 .actionTitle {
-  font-size: 1.15rem;
+  font-size: clamp(0.95rem, 4.2vw, 1.15rem);
   font-weight: 850;
   letter-spacing: -0.8px;
   color: #1e293b;
   margin-bottom: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  margin-right: 8px;
 }
 
 .actionDesc {
