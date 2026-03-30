@@ -258,16 +258,6 @@ export default async function ShipPage({ params }: { params: Promise<{ shipId: s
       </section>
 
       <footer style={{ textAlign: 'center', marginTop: '4rem', paddingBottom: '3.5rem', fontSize: '0.8rem', color: '#64748b', borderTop: '1px solid #e2e8f0', paddingTop: '2.5rem' }}>
-         <div style={{ marginBottom: '1.2rem', padding: '0.8rem 1.2rem', background: '#ffffff', borderRadius: '15px', border: '1px solid #cbd5e1', display: 'inline-block', boxShadow: '0 4px 10px rgba(0,0,0,0.03)' }}>
-           <span style={{ color: '#475569', marginRight: '10px', fontWeight: 600 }}>여객선 안전정보 센터</span>
-           <a 
-             href="tel:0507-1352-9457" 
-             style={{ fontSize: '1.15rem', color: '#0369a1', fontWeight: 900, textDecoration: 'none' }}
-           >
-             📞 0507-1352-9457
-           </a>
-         </div>
-         
          <p style={{ fontWeight: 850, color: '#334155', marginBottom: '0.8rem', fontSize: '0.95rem' }}>한국해양교통안전공단 목포운항관리센터</p>
          <p style={{ color: '#94a3b8', fontSize: '0.75rem' }}>© {new Date().getFullYear()} MOKPO MARITIME SAFETY. 본 관리 시스템의 모든 권리는 공단에 있습니다.</p>
          <p style={{ marginTop: '12px', letterSpacing: '0.5px', color: '#0284c7', fontWeight: 700, fontSize: '0.85rem' }}>🌊 세상에서 가장 안전한 바닷길을 만듭니다.</p>
